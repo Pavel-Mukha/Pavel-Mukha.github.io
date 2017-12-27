@@ -1,0 +1,63 @@
+.features{
+  margin-bottom:55px;
+  background-color: #eeeeee;
+  &__header{margin-bottom:45px;}
+  &__image{
+    float: left;
+    width:66.66%;
+    height:256px;
+    background: url("../../img/n2.jpg")no-repeat center;
+  }
+  &__block{
+    float: right;
+    width:33.34%;
+    height:256px;
+    padding-top:60px;
+    background-color: #81b3d2;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__name{
+    width:165px;
+  }
+  &__description{
+    width:220px;
+    color: #ffffff;
+  }
+  &__body{
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__area{
+    float: left;
+    width:33.33%;
+  }
+  &__road{
+    float: left;
+    width:33.33%;
+  }
+  &__tourists{
+    float: left;
+    width:33.33%;
+  }
+  &__name{
+    max-width:125px;
+    margin:0 auto 10px auto;
+    font-size:21px;
+    line-height:1.23;
+    font-weight:bold;
+  }
+  &__number{
+    display: block;
+    margin-bottom:10px;
+  }
+  &__description{
+    max-width:265px;
+    margin:0 auto 70px auto;
+    line-height:1.5;
+    color: #333333;
+  }
+  &__description.about-us__description{
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="main-body">
+    <div class="wrapper">
+        <header class="main-header">
+            <div class="adaptive-menu">
+                <ul class="adaptive-menu__list">
+                    <li class="adaptive-menu__close"></li>
+                    <li class="adaptive-menu__item"><a href="index.html" class="adaptive-menu__link">Главная</a></li>
+                    <li class="adaptive-menu__item"><a href="photo.html" class="adaptive-menu__link">фото и видео</a></li>
+                    <li class="adaptive-menu__item"><a class="adaptive-menu__link">Форма отзыва</a></li>
+                    <li class="adaptive-menu__item"><a href="#" class="adaptive-menu__link">Web-Studio</a></li>
+                </ul>
+                <div class="adaptive-menu__status-bar">
+                    <a href="index.html" class="adaptive-menu__logotype"><img src="img/logotyle-mobile.png" alt="logo" width="102" height="83"></a>
+                    <div class="adaptive-menu__indicator">
+                        <span class="adaptive-menu__indicator-line"></span>
+                        <span class="adaptive-menu__indicator-line"></span>
+                        <span class="adaptive-menu__indicator-line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu">
+                <ul class="header-menu__list clear-fix">
+                    <li class="header-menu__item"><a href="index.html" class="header-menu__link ">Главная</a></li>
+                    <li class="header-menu__item"><a href="photo.html" class="header-menu__link">ФОТО И ВИДЕО</a></li>
+                    <li class="header-menu__item header-menu__item-logo">
+                        <a href="index.html" class="header-menu__link header-menu__link-logo">
+                            <img src="img/logotype-desktop.png" alt="logo" class="header-menu__desktop-logo" width="188" height="96">
+                            <img src="img/logotype-tablet.png" alt="logo" class="header-menu__tablet-logo" width="102" height="83">
+                        </a>
+                    </li>
+                    <li class="header-menu__item"><a class="header-menu__link header-menu__link_active">Форма отзыва</a></li>
+                    <li class="header-menu__item"><a href="#" class="header-menu__link">Web-Studio</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="photo-page-background-img feedback-page-background-img"></div>
+        <div class="feedback">
+            <form action="#" class="feedback__form" name="form">
+                <div class="comment">
+                    <div class="comment__header">
+                        <p class="comment__title">Оставьте свой отзыв</p>
+                        <p class="comment__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+                    </div>
+                    <div class="comment__body clear-fix">
+                        <div class="introduce clear-fix">
+                            <div class="introduce__inner">
+                                <p class="introduce__title">Представьтесь<span class="introduce__title-tablet">, пожалуйста</span>:</p>
+                                <div class="introduce__item clear-fix">
+                                    <span class="introduce__name-field introduce__name-field_width">ИМЯ:</span>
+                                    <input type="text" class="introduce__input introduce__input_width" placeholder="Петр">
+                                </div>
+                                <div class="introduce__item clear-fix">
+                                    <span class="introduce__name-field">ФАМИЛИЯ:</span>
+                                    <input type="text" class="introduce__input" placeholder="Иванов">
+                                </div>
+                                <div class="introduce__item clear-fix">
+                                    <span class="introduce__name-field">Отчество:</span>
+                                    <input type="text" class="introduce__input" placeholder="Александрович">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="impression">
+                            <div class="impression__inner">
+                            <p class="impression__title">ВАше Общее впечатление:</p>
+                                <div class="impression__item">
+                                    <label class="impression__label">
+                                        <input type="radio" class="impression__radio" name="impression" value="0" checked>
+                                        <span class="impression__indicator"></span>
+                                        <span class="impression__text">Скорее положительное</span>
+                                    </label>
+                                </div>
+                                <div class="impression__item">
+                                    <label class="impression__label">
+                                        <input type="radio" class="impression__radio" name="impression" value="1">
+                                        <span class="impression__indicator"></span>
+                                        <span class="impression__text">Скорее отрицательное</span>
+                                    </label>
+                                </div>
+                                <div class="impression__item">
+                                    <label class="impression__label">
+                                        <input type="radio" class="impression__radio" name="impression" value="2">
+                                        <span class="impression__indicator"></span>
+                                        <span class="impression__text">Затрудняюсь ответить</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info__header">
+                        <span class="contact-info__line"></span>
+                        <p class="contact-info__title">Контактная информация:</p>
+                    </div>
+                    <div class="contact-info__body clear-fix">
+                        <div class="contact-info__phone clear-fix">
+                            <span class="contact-info__text contact-info__text_tel"><span class="contact-info__text-tablet">Контактный</span> Телефон:</span>
+                            <input type="tel" class="contact-info__field contact-info__field_tel" required placeholder="Введите номер">
+                        </div>
+                        <div class="contact-info__email clear-fix">
+                            <span class="contact-info__text contact-info__text_email">Электронная почта:</span>
+                            <input type="email" class="contact-info__field contact-info__field_email" placeholder="Введите e-mail" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="attractions">
+                    <div class="attractions__header">
+                        <span class="contact-info__line attractions__line"></span>
+                        <p class="attractions__title">посещенные достопримечательности:</p>
+                    </div>
+                    <div class="attractions__body clear-fix">
+                        <div class="attractions__inner">
+                            <label class="attractions__label">
+                                <input type="checkbox" class="attractions__checkbox" checked>
+                                <span class="attractions__indicator"></span>
+                                <span class="attractions__text">Мост Дьявола</span>
+                            </label>
+                        </div>
+                        <div class="attractions__inner">
+                            <label class="attractions__label attractions__label_text-align">
+                                <input type="checkbox" class="attractions__checkbox" checked>
+                                <span class="attractions__indicator attractions__indicator_right"></span>
+                                <span class="attractions__text attractions__text_right">Гора-Колокол</span>
+                            </label>
+                        </div>
+                        <div class="attractions__inner">
+                            <label class="attractions__label">
+                                <input type="checkbox" class="attractions__checkbox" checked>
+                                <span class="attractions__indicator"></span>
+                                <span class="attractions__text">Слайд-парк</span>
+                            </label>
+                        </div>
+                        <div class="attractions__inner">
+                            <label class="attractions__label attractions__label_text-align">
+                                <input type="checkbox" class="attractions__checkbox">
+                                <span class="attractions__indicator attractions__indicator_right"></span>
+                                <span class="attractions__text attractions__text_right">Красные скалы</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="message__header">
+                        <span class="contact-info__line message__line"></span>
+                        <p class="attractions__title message__title">Опишите свои эмоции:</p>
+                        <textarea name="message" cols="30" rows="10" class="message__textarea" placeholder="Опишите подробно все свои восторги " required></textarea>
+                    </div>
+                    <div class="message__body clear-fix">
+                        <input type="submit" class="message__btn btn" value="ОТПРАВИТЬ ОТЗЫВ">
+                        <div class="message__tip"><span>* — обязательные поля</span></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer class="main-footer clear-fix">
+            <div class="main-footer__hash-tag">
+                <a href="#" class="main-footer__tag-link">#visitSEDONA</a>
+            </div>
+            <div class="main-footer__socials">
+                <a href="#" class="main-footer__social main-footer__social_tw">Twitter</a>
+                <a href="#" class="main-footer__social main-footer__social_fb">Facebook</a>
+                <a href="#" class="main-footer__social main-footer__social_yt">Youtube</a>
+            </div>
+            <div class="main-footer__developed">
+                <a class="main-footer__developer-name">Web-Studio</a>
+                <a href="https://htmlacademy.ru/" class="main-footer__design">HTML Academy</a>
+            </div>
+        </footer>
+    </div>
+    <script src="js/menu.js"></script>
+</body>
+</html>

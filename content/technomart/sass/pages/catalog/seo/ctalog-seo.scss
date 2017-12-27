@@ -1,0 +1,22 @@
+.catalog-seo {
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  padding-top:75px;
+  background-color: #f2f6f8;
+  &__name{
+    width:100%;
+    margin-bottom:35px;
+    font-size:30px;
+    line-height:0.8;
+    color: #000;
+  }
+  &__text{
+    width:100%;
+    margin-bottom:75px;
+    font:13px "PT Sans", sans-serif;
+    line-height:1.84;
+    color: #000;
+
+  }
+}

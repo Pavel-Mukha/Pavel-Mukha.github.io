@@ -1,0 +1,70 @@
+.registration{
+  position: fixed;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  top:50%;
+  left: 50%;
+  width:500px;
+  height:550px;
+  margin-top:-275px;
+  margin-left:-250px;
+  background-color: #fff;
+  z-index:21;
+  &__inner{
+    width:70%;
+  }
+  &__title{
+    font:30px/normal "Cuprum", sans-serif;
+    color: #000;
+    margin-bottom:10px;
+  }
+  &__description{
+    font:18px/normal "Cuprum", sans-serif;
+    color: #000;
+    margin-bottom:10px;
+  }
+  &__form{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+  }
+  &__text{
+    font:16px/normal "Cuprum", sans-serif;
+    color: #000;
+    margin-bottom:3px;
+  }
+  &__field{
+    height:30px;
+    font:16px/normal "Cuprum", sans-serif;
+    color: #000;
+    margin-bottom:5px;
+    padding-left:10px;
+    border: 1px solid #999999;
+    border-radius: 2px;
+  }
+  &__field_margin{
+    margin-bottom:35px;
+  }
+  &__submit{
+    outline:none;
+    border:none;
+    cursor: pointer;
+    font:18px/normal "Cuprum", sans-serif;
+    text-transform: none;
+  }
+  &__close{
+    top:20px;
+  }
+  &__text_checker{
+    position: absolute;
+    bottom:46px;
+    z-index:21;
+    color: #ee0009;
+    display: none;
+  }
+}
+.registration{
+  display: none;
+}

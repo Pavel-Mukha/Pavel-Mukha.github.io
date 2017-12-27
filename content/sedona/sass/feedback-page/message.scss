@@ -1,0 +1,36 @@
+.message{
+  margin-bottom:65px;
+  &__header{
+    position: relative;
+  }
+  &__line{}
+  &__title{
+    text-align: center;
+    margin-bottom:65px;
+  }
+  &__textarea{
+    display: block;
+    width:960px;
+    height:160px;
+    margin:0 auto 60px auto;
+    padding:20px;
+    resize: none;
+    border:none;
+    background-color: #f2f2f2;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  &__btn{
+    float: left;
+    width:480px;
+    height:60px;
+    margin-left:120px;
+  }
+  &__tip{
+    float: right;
+    padding-right:120px;
+    padding-top:17px;
+    color: #333333;
+  }
+}

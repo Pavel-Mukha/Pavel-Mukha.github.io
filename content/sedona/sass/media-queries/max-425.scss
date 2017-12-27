@@ -1,0 +1,25 @@
+@media screen and (max-width: 425px){
+  .contact-info{
+    margin-bottom: 300px;
+  }
+  .attractions{
+    margin-bottom:20px;
+    &__inner{
+      margin-bottom:45px;
+    }
+  }
+  .message{
+    margin-bottom:0;
+    padding:0 20px;
+    &__textarea{
+      margin-bottom:40px;
+    }
+    &__tip{
+      display: none;
+    }
+    &__btn{
+      float: none;
+      width:100%;
+    }
+  }
+}

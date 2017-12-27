@@ -1,0 +1,83 @@
+.main-footer{
+  height:120px;
+  &__hash-tag{
+    float: left;
+    width:33.33%;
+    padding-top:44px;
+    text-align: center;
+  }
+  &__tag-link{
+    cursor: pointer;
+    font-size:21px;
+    line-height:1.23;
+    font-weight:bold;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.2s;
+    &:hover{color: #81b3d2;}
+    &:active{opacity: .3;}
+  }
+  &__socials{
+    float: left;
+    width:33.33%;
+    padding-top:33px;
+    text-align: center;
+    font-size:0;
+  }
+  &__social{
+    display: inline-block;
+    vertical-align: middle;
+    width:46px;
+    height:48px;
+    margin-right:6px;
+    background: url("../../img/social-normal.png")no-repeat;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{background: url("../../img/social-hover.png")no-repeat;}
+    &:active{background: url("../../img/social-active.png")no-repeat;}
+  }
+  &__social_tw{
+    background-position: 0 0;
+    &:hover{background-position: 0 0;}
+    &:active{background-position: 0 0;}
+  }
+  &__social_fb{
+    background-position: -53px 0;
+    &:hover{background-position: -53px 0;}
+    &:active{background-position: -53px 0;}
+  }
+  &__social_yt{
+    background-position: -107px 0;
+    &:hover{background-position: -107px 0;}
+    &:active{background-position: -107px 0;}
+  }
+  &__developed{
+    float: left;
+    width:33.33%;
+    padding-top:34px;
+    text-align: center;
+  }
+  &__developer-name{
+    display: block;
+    margin-bottom:5px;
+    font-size:21px;
+    line-height:1.23;
+    font-weight:bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{color: #81b3d2;}
+    &:active{opacity: .3;}
+  }
+  &__design{
+    display: block;
+    font-size:16px;
+    line-height:1.23;
+    color: #000;
+    text-decoration: none;
+    text-transform: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{color: #81b3d2;}
+    &:active{opacity: .3;}
+  }
+}

@@ -1,0 +1,40 @@
+/* mixins */
+@import "mixins/mixin";
+
+/* global */
+@import "global/globals/globals";
+@import "global/btn/button";
+@import "global/header/header";
+@import "global/header/header-navigatin";
+@import "pages/index/categories/categories";
+@import "pages/index/features/features";
+@import "global/products/products";
+@import "pages/index/vendors/vendors";
+@import "pages/index/services/services";
+@import "pages/index/about-us/company";
+@import "pages/index/about-us/contacts";
+@import "global/footer/footer";
+@import "pages/catalog/breadcrumbs/breadcrumbs";
+@import "pages/catalog/globals/globals";
+@import "pages/catalog/filters/filter";
+@import "pages/catalog/sorting/sorting";
+@import "pages/catalog/catalog-content/catalog";
+@import "global/paginator/paginator";
+@import "pages/catalog/seo/ctalog-seo";
+@import "adaptive/adaptive";
+@import "modals/write-us";
+@import "modals/global-modal";
+@import "modals/login";
+@import "modals/registration";
+@import "modals/map";
+
+
+  /* media queries */
+@import "media/media-max-960";
+@import "media/media-max-768";
+@import "media/media-max-650";
+@import "media/media-max-500";
+
+
+
+

@@ -1,0 +1,103 @@
+.login{
+  position: fixed;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  top:50%;
+  left: 50%;
+  width:500px;
+  height:350px;
+  margin-top:-175px;
+  margin-left:-250px;
+  background-color: #fff;
+  box-shadow: 0 20px 30px 20px rgba(0,0,0, .25);
+  z-index:21;
+  &__inner{
+    width:70%;
+  }
+  &__title{
+    font:30px/normal "Cuprum", sans-serif;
+    margin-bottom:20px;
+  }
+  &__description{
+    font:18px/normal "Cuprum", sans-serif;
+    margin-bottom:10px;
+  }
+  &__field{
+    width:100%;
+    height:40px;
+    padding-left:15px;
+    border: 1px solid #999999;
+    border-radius:2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  &__margin-bottom-10{
+    margin-bottom:10px;
+  }
+  &__margin-bottom-20{
+    margin-bottom:25px;
+  }
+  &__checkbox-inner{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    font:16px/normal "Cuprum", sans-serif;
+    margin-bottom:20px;
+  }
+  &__checkbox{
+    font:16px/normal "Cuprum", sans-serif;
+    text-transform: none;
+    cursor: pointer;
+    &:hover{
+      color: #ee3643;
+    }
+  }
+  &__checkbox-item{
+    margin: 0;
+  }
+  &__forgot-password{
+    color: #000;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+      color: #ee3643;
+    }
+    &:active{
+      opacity: 0.7;
+    }
+  }
+  &__btn{
+    outline:none;
+    border:none;
+    cursor: pointer;
+  }
+  &__close{
+    top: 20px;
+  }
+  &__submit-inner{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+  }
+  &__btn{
+    text-transform: none;
+    font:18px/normal "Cuprum", sans-serif;
+  }
+  &__registration-btn{
+    padding-left: 25px;
+    padding-right:25px;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    text-transform: none;
+    font:18px/normal "Cuprum", sans-serif;
+  }
+}
+.login{
+  display: none;
+}

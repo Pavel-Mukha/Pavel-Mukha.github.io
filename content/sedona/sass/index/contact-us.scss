@@ -1,0 +1,28 @@
+.contact-us{
+  text-align: center;
+  text-transform: uppercase;
+  &__header{margin-bottom:65px;}
+  &__title{
+    margin-bottom:30px;
+    font-size:30px;
+    font-weight:bold;
+  }
+  &__text{
+    width:440px;
+    margin: 0 auto 50px auto;
+    line-height:1.74;
+    color: #333333;
+  }
+  &__btn{
+    width:455px;
+    height:60px;
+    font-size:21px;
+    line-height:1.23;
+    font-weight:bold;
+    text-transform: uppercase;
+  }
+}
+.map{
+  width:1200px;
+  height:350px;
+}

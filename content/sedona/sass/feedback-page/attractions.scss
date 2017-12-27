@@ -1,0 +1,75 @@
+.attractions{
+  margin-bottom:70px;
+  &__header{
+    position: relative;
+    text-align: center;
+  }
+  &__line{
+    top: 24px;
+    left: 0;
+  }
+  &__title{
+    position: relative;
+    width:400px;
+    margin:0 auto 60px auto;
+    font-size:21px;
+    line-height:1.23;
+    font-weight:bold;
+    background-color: #fff;
+  }
+  &__body{padding-left:120px;}
+  &__inner{
+    float: left;
+    width:25%;
+  }
+  &__label{
+    position: relative;
+  }
+  &__text{
+    padding-left:80px;
+    font-size:18px;
+    line-height:1.44;
+    font-weight:bold;
+    text-transform: none;
+    cursor: pointer;
+  }
+  &__checkbox{display: none;}
+  &__indicator{
+    position: absolute;
+    top:-20px;
+    left:0;
+    width:56px;
+    height:56px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    cursor: pointer;
+    &::after{
+      content: '';
+      position: absolute;
+      top:50%;
+      left:50%;
+      margin-top:-11px;
+      margin-left:-8px;
+      width:15px;
+      height:10px;
+      border-bottom:3px solid #231f20;
+      border-left:3px solid #231f20;
+      transform: rotate(-45deg);
+      opacity:0;
+    }
+  }
+  &__inner input[type='checkbox']:checked~&__indicator::after{
+    opacity:1;
+    transition: all 0.3s;
+  }
+}
+.message{
+  &__title{
+    width:auto;
+  }
+  &__tip{
+    width:50%;
+    float: right;
+    text-align: right;
+  }
+}

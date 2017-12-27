@@ -1,0 +1,360 @@
+  /* header */
+.main-header {
+  padding-bottom:55px;
+  background-color: #f1f5f7;
+  &__wrapper-status-bar {
+    width: 100%;
+    background-color: #293449;
+  }
+  &__status-bar{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height:45px;
+  }
+  &__wrapper-logo-search{
+    width:490px;
+    display: flex;
+  }
+
+
+    /* logo */
+
+
+  &__logo {
+    width:220px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height:45px;
+    font-size: 24px;
+    line-height: 1;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #ee3643;
+    @include box-shadow(0, 5px, 0, 0, #b52933);
+    @include transition(background-color, 0.3s, ease);
+    cursor: default;
+    &:hover {
+      background-color: #ca2c37;
+    }
+    &:active {
+      background-color: #ba2732;
+    }
+  }
+  &__logo-active{
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+
+    /* search */
+
+
+
+  &__search {
+    flex-basis:270px;
+    height:45px;
+    position: relative;
+    font-size:17px;
+    line-height:1;
+    color: #ffffff;
+    background: #000;
+  }
+  &__form {
+    display: flex;
+  }
+  &__field{
+    position: relative;
+    width:100%;
+    min-width:150px;
+    color: #ffffff;
+    height:45px;
+    padding-left:44px;
+    outline:none;
+    border:none;
+    background-color: #293449;
+    @include placeholder( #fff);
+    @include transition(all, 0.2s, ease);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+  }
+  &__loupe1{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:17px;
+    height:17px;
+    margin-left:17px;
+    margin-top:12px;
+    background: transparent url("../../../img/sprite/sprite.png")no-repeat 0 0;
+    opacity: 0.3;
+  }
+  &__loupe2{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:17px;
+    height:17px;
+    margin-left:17px;
+    margin-top:12px;
+    background: transparent url("../../../img/icon-search.png") no-repeat center;
+    display: none;
+  }
+  &__field:hover {
+    background-color: #212a3a;
+  }
+  &__field:hover ~ .main-header__loupe1 {
+    opacity:1;
+    @include transition(all, 0.2s, ease);
+  }
+  &__field:focus ~ .main-header__loupe1 {
+    display: none;
+  }
+  &__field:focus ~ .main-header__loupe2 {
+    display: block;
+  }
+  &__field:focus{
+    background-color: #ffffff;
+    @include placeholder(transparent);
+    color: #000;
+  }
+
+
+
+
+    /* bookmarks */
+
+
+  &__bookmarks{
+    display: flex;
+    flex-basis:145px;
+    position: relative;
+    @include transition(all, 0.2s, ease);
+    &:hover{
+      background-color: #212a3a;
+    }
+    &:active{
+      background-color: #161d29;
+    }
+
+  }
+  &__bookmarks-href{
+    display: flex;
+    padding-left:45px;
+    align-items:center;
+    text-align: center;
+    width:100%;
+    height:45px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  &__bookmarks-href::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin-left:17px;
+    margin-top:12px;
+    width:16px;
+    height:16px;
+    background: transparent url("../../../img/sprite/sprite.png")no-repeat 0 -27px;
+    opacity: 0.3;
+    @include transition(all, 0.2s, ease);
+  }
+  &__bookmarks:hover .main-header__bookmarks-href::after{
+    opacity: 1;
+  }
+
+
+
+  /* backed */
+
+
+  &__basket{
+    display: flex;
+    flex-basis:154px;
+    position: relative;
+    @include transition(all, 0.2s, ease);
+    &:hover{
+      background-color: #212a3a;
+    }
+    &:active{
+      background-color: #161d29;
+    }
+  }
+  &__basket-href{
+    display: flex;
+    align-items:center;
+    text-align: center;
+    padding-left:45px;
+    height:45px;
+    width:100%;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  &__basket-href::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:16px;
+    height:16px;
+    margin-left:17px;
+    margin-top:12px;
+    background: transparent url("../../../img/sprite/sprite.png")no-repeat 0 -53px;
+    opacity: 0.3;
+    @include transition(all, 0.2s, ease);
+  }
+  &__basket:hover .main-header__basket-href::after{
+    opacity:1;
+  }
+
+
+  /*order*/
+
+
+
+  &__order{
+    flex-basis:150px;
+    display: flex;
+    position: relative;
+    background: #63a63e;
+    @include transition(background-color, 0.2s, ease);
+    &:hover{
+      background-color: #5fbb2d;
+    }
+    &:active {
+      background-color: #518534;
+    }
+  }
+  &__order-href{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height:45px;
+    width:100%;
+    color: #ffffff;
+    text-decoration: none;
+
+  }
+
+
+
+  /* info */
+
+
+
+  &__wrapper-info {
+    width:100%;
+  }
+  &__info {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    height:160px;
+  }
+  &__name{
+    width:195px;
+    font-size:16px;
+    line-height:1.43;
+    font-style: italic;
+    color: #ee3643;
+  }
+
+
+    /* contacts */
+
+  &__contacts{
+    display: flex;
+    flex-direction:column;
+    width:270px;
+    min-width:240px;
+  }
+  &__phone {
+    position: relative;
+    align-items:center;
+    justify-content:center;
+    height:45px;
+    margin-bottom:5px;
+    border:3px solid #ffffff;
+    display: flex;
+    font-size:21px;
+    line-height:1;
+    color: #e9292a;
+  }
+  &__phone::before{
+    content: '';
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    width:19px;
+    height:19px;
+    background: transparent url("../../../img/sprite/sprite.png")no-repeat 0 -79px;
+    margin-top:10px;
+    margin-left:16px;
+  }
+  &__address {
+    font-size:14px;
+    line-height:1.7;
+    color: #32425c;
+  }
+
+
+    /* user-block */
+
+
+  &__user-block{
+    position: relative;
+    top:-10px;
+    display: flex;
+    flex-wrap:wrap;
+  }
+  &__sign-in{
+    position: relative;
+    margin-right: 10px;
+    margin-bottom:10px;
+    padding-left: 48px;
+    &:active {
+      @include box-shadow-i(inset, 0, 2px, 1px, 0, rgba(0,0,0, 0.1));
+      @include translate(0, 1px);
+    }
+  }
+  &__sign-ico{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:19px;
+    height:17px;
+    margin-top:13px;
+    margin-left: 15px;
+    background: transparent url("../../../img/sprite/sprite.png")no-repeat -33px -107px;
+    opacity:0.3;
+  }
+  &__sign-up:active{
+    @include box-shadow-i(inset, 0, 2px, 1px, 0, rgba(0,0,0, 0.1));
+    @include translate(0, 1px);
+  }
+  &__sign-in:hover &__sign-ico {
+    opacity:1;
+    @include transition(all, 0.2s, ease);
+  }
+  &__sign-up{
+    margin-bottom: 10px;
+  }
+}

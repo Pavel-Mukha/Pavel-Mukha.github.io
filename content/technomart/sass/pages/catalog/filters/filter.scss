@@ -1,0 +1,211 @@
+.filters{
+  width:220px;
+  margin-bottom:20px;
+  margin-right:20px;
+  &__title{
+    display: flex;
+    align-items: center;
+    width:100%;
+    height:40px;
+    font-size:13px;
+    line-height: 1.38;
+    color: #000;
+    padding-left: 20px;
+    background-color: #f7f3ec;
+    text-transform: uppercase;
+    cursor: default;
+  }
+  &__name{
+    display: flex;
+    align-items:center;
+    height:60px;
+    font:17px "PT Sans", sans-serif;
+    font-weight:bold;
+    line-height:1.76;
+    color: #000;
+  }
+}
+.selection-prices{
+  &__element{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height:80px;
+    margin-bottom:10px;
+    background-color: #f7f3ec;
+  }
+  &__price-line{
+    position: relative;
+    display: flex;
+    width:170px;
+    height:2px;
+    background-color: #d7dcde;
+  }
+  &__toggle-left{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 20px;
+    height:20px;
+    margin-left: -10px;
+    background-color: #fff;
+    cursor: pointer;
+    z-index:1;
+    @include border-radius(50%);
+    @include box-shadow(0, 3px, 2px, 0, #d4d1cb);
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left:50%;
+      margin-top:-2px;
+      margin-left:-2px;
+      width:4px;
+      height:4px;
+      background-color: #ababab;
+      @include border-radius(50%);
+    }
+  }
+  &__toggle-right{
+    position: absolute;
+    top: -10px;
+    left: 100%;
+    width: 20px;
+    height:20px;
+    margin-left: -10px;
+    background-color: #fff;
+    cursor: pointer;
+    z-index:1;
+    @include border-radius(50%);
+    @include box-shadow(0, 3px, 2px, 0, #d4d1cb);
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left:50%;
+      margin-top:-2px;
+      margin-left:-2px;
+      width:4px;
+      height:4px;
+      background-color: #ababab;
+      @include border-radius(50%);
+    }
+  }
+  &__price-line-color{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: #00ca74;
+    z-index: 0;
+  }
+  &__btn{
+    font:13px "PT Sans", sans-serif;
+    line-height:1.384;
+    color: #000;
+    padding:12px 38px;
+    border:1px solid #e5e5e5;
+    background-color: transparent;
+    cursor: pointer;
+    outline:none;
+    @include border-radius(3px);
+    &:hover {
+      border-color: #bdc6ca;
+    }
+    &:active {
+      border-color: #ee3643;
+    }
+  }
+}
+
+.selection-prices{
+  &__body{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom: 25px;
+    border-bottom:1px solid #e5e5e5;
+  }
+  &__text{
+    display: flex;
+    text-align: center;
+    width:95px;
+    height:38px;
+    background-color: #f7f3ec;
+    font:17px "PT Sans", sans-serif;
+    line-height:1;
+    color: #000;
+    border:none;
+    outline:none;
+  }
+  &__separator{
+    font:16px "PT Sans", sans-serif;
+    line-height:1.125;
+    color: #444;
+  }
+}
+.manufacture{
+  &__label{
+    cursor: pointer;
+  }
+  &__item{
+    position: relative;
+    font:15px "PT Sans", sans-serif;
+    line-height:1.33;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-left:35px;
+  }
+  &__item:last-child{
+    margin-bottom:0;
+  }
+  &__flag{
+    display: none;
+  }
+  &__indicator{
+    position: absolute;
+    left:0;
+    top: -2px;
+    width: 23px;
+    height:23px;
+    background: url("../../../img/sprite/sprite.png")no-repeat -144px -27px;
+  }
+  &__item input[type="checkbox"]:checked ~ &__indicator::after{
+    content: '';
+    position: absolute;
+    left:0;
+    top: -2px;
+    width: 27px;
+    height:23px;
+    background: url("../../../img/sprite/sprite.png")no-repeat -144px -65px;
+  }
+}
+.power {
+  margin-bottom:75px;
+  &__label{
+    cursor: pointer;
+  }
+  &__indicator{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border:3px solid #c1c1c1;
+    @include border-radius(50%);
+
+  }
+  &__item input[type="radio"]:checked ~ &__indicator::after{
+    content: '';
+    position: absolute;
+    left:50%;
+    top: 50%;
+    width: 9px;
+    height: 9px;
+    margin-top: -5px;
+    margin-left: -4px;
+    background-color: #c1c1c1;
+    @include border-radius(50%);
+  }
+}

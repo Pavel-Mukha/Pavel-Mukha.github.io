@@ -1,0 +1,47 @@
+.paginator{
+  display: flex;
+  justify-content:flex-start;
+  margin-bottom:60px;
+
+  &__list{
+    display: flex;
+  }
+  &__item{
+
+  }
+  &__link{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width:38px;
+    height:38px;
+    margin-right:10px;
+    font:13px "PT Sans", sans-serif;
+    line-height:1.38;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #fff;
+    border:1px solid #e5e5e5;
+    @include border-radius(3px);
+    &:hover {
+      border-color: #bdc6ca;
+    }
+    &:active {
+      border-color: #ee3643;
+    }
+  }
+  &__link_next{
+    margin-right:0;
+    width:auto;
+    height:38px;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+  &__link_active {
+    background-color: #ee3643;
+    border:none;
+    color: #ffffff;
+    cursor: default;
+  }
+}

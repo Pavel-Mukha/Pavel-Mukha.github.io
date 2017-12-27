@@ -1,0 +1,122 @@
+@media screen and(max-width: 600px) {
+  .services__description{
+    width:auto;
+  }
+  .contact-us{
+    &__header{
+      margin-bottom:35px;
+    }
+    &__text{
+      width:100%;
+      margin-bottom:35px;
+    }
+    &__btn{
+      width:90%;
+    }
+  }
+  .main-footer{
+    height:auto;
+    &__hash-tag{
+      float: none;
+      width:100%;
+    }
+    &__socials{
+      float: none;
+      width:100%;
+    }
+    &__developed{
+      float: none;
+      width:100%;
+      padding-bottom:35px;
+    }
+  }
+  .photo-page-background-img{
+    height:280px;
+    margin-bottom:40px;
+    background:
+            url("../../img/intro-triangle-photo-page.png") no-repeat bottom,
+            url("../../img/SEDONA.png") no-repeat center,
+            url("../../img/back-desktop-photo-page.jpg") no-repeat center;
+  }
+  .sedona-photos{
+    padding:0 20px;
+    margin-bottom:0;
+    &__text{
+      margin-bottom:35px;
+      width:auto;
+    }
+    &__big-image{
+      margin-bottom:100px;
+    }
+    &__info_small{
+      max-width: 400px;
+      margin:0 auto;
+    }
+    &__photo-1{
+      float: none;
+      width:100%;
+      margin-bottom:100px;
+    }
+    &__photo-2{
+      float: none;
+      width:100%;
+      margin-bottom:100px;
+    }
+    &__photo-3{
+      float: none;
+      width:100%;
+      margin-bottom:120px;
+    }
+  }
+  .sedona-video{
+    padding:0 20px;
+    &__text{
+      width:auto;
+    }
+  }
+  .comment{
+    &__text{
+      width:100%;
+      max-width:450px;
+    }
+  }
+  .introduce{
+    &__title{
+    }
+    &__inner{
+      padding:0 20px;
+    }
+  }
+  .impression{
+    &__title{
+      margin-bottom:40px;
+    }
+    &__inner{
+      padding:0 20px;
+    }
+  }
+  .contact-info{
+    padding:0 20px;
+    margin-bottom:325px;
+    &__phone{
+      padding: 0;
+    }
+    &__email{
+      padding: 0;
+    }
+    &__text_tel{
+      width:auto;
+    }
+    &__text_email{
+      width:auto;
+    }
+  }
+  .attractions{
+    &__title{
+      width:auto;
+    }
+    &__body{
+      padding-left:60px;
+    }
+  }
+}

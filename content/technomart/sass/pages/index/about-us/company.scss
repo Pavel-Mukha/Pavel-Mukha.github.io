@@ -1,0 +1,54 @@
+.about-us{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  margin-bottom:85px;
+}
+.company{
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
+  width:540px;
+  margin-right:20px;
+  &__name{
+    margin-bottom:30px;
+    font-size:30px;
+    line-height:0.8;
+    color: #000;
+    text-transform: uppercase;
+  }
+  &__description{
+    margin-bottom:30px;
+    font:13px "PT Sans", sans-serif;
+    line-height:1.84;
+    color: #000;
+  }
+  &__paragraph_indent{
+  }
+  &__info{
+    margin-left:35px;
+    margin-bottom:35px;
+
+  }
+  &__item{
+    position: relative;
+    margin-bottom:20px;
+    font-size:18px;
+    line-height:1.11;
+    color: #000;
+    &::after{
+      content: '';
+      position: absolute;
+      width:25px;
+      height:2px;
+      top: 50%;
+      left:-35px;
+      margin-top:-1px;
+      background-color: #fb565a;
+    }
+  }
+  &__item:last-child{
+    margin-bottom:0;
+  }
+
+}

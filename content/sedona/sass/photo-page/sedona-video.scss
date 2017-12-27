@@ -1,0 +1,22 @@
+.sedona-video{
+  text-align: center;
+  &__header{
+    text-align: center;
+  }
+  &__title{
+    font-size:30px;
+    font-weight:bold;
+    margin-bottom:30px;
+  }
+  &__text{
+    width:430px;
+    margin:0 auto 75px auto;
+    line-height:1.71;
+    color: #333333;
+  }
+  &__body{}
+  &__youtube{
+    width:800px;
+    height:500px;
+  }
+}

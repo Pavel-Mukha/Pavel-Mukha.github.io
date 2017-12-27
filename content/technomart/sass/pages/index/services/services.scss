@@ -1,0 +1,143 @@
+.services{
+  background-color: #f2f6f8;
+  margin-bottom:80px;
+  overflow: hidden;
+  &__wrapper{
+    display: flex;
+    flex-direction:column;
+  }
+  &__header{
+    width:400px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-top:60px;
+    padding-bottom:60px;
+  }
+  &__title{
+    margin-bottom:35px;
+    font-size:30px;
+    line-height:0.8;
+    color: #000;
+    text-transform: uppercase;
+
+  }
+  &__description{
+    margin-bottom:35px;
+    font:13px "PT Sans", sans-serif;
+    line-height:1.84;
+    color: #000;
+  }
+  &__body{
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin-bottom: 100px;
+    & input[type="radio"]{
+      display: none;
+    }
+  }
+  &__type {
+    position: relative;
+    width:240px;
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    &:after{
+      content: '';
+      position: absolute;
+      top: -37px;
+      right: 0;
+      width:10px;
+      height:272px;
+      background: transparent url("../../../img/line.png")no-repeat center;
+    }
+  }
+  &__choice {
+    font-size:21px;
+    line-height:1.42;
+    color: #ffffff;
+    padding:15px 0 15px 22px;
+    background-color: #32425c;
+    border-top:1px solid #405069;
+    border-bottom:1px solid #293449;
+    cursor: pointer;
+  }
+  &__more {
+    position: relative;
+    display: flex;
+    align-items:flex-start;
+    width:100%;
+    height:100%;
+  }
+  &__more-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    width:380px;
+    margin-left:80px;
+  }
+  &__more-wrapper{
+    opacity: 0;
+  }
+  &__bg-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__bg-image_delivery{
+    width:468px;
+    height:261px;
+    top: 34px;
+    right: -164px;
+    background: url("../../../img/car.png")no-repeat center;
+  }
+  &__bg-image_guaranty{
+    width:389px;
+    height:283px;
+    top: -8px;
+    right: -149px;
+    background: url("../../../img/guaranty.png")no-repeat center;
+  }
+  &__bg-image_credit{
+    width:465px;
+    height:285px;
+    top: 0;
+    right: -185px;
+    background: url("../../../img/credit.png")no-repeat center;
+  }
+  &__name{
+    font-size:36px;
+    line-height:0.66;
+    color: #32425c;
+    text-transform: uppercase;
+    margin-bottom:30px;
+    z-index: 1;
+  }
+  &__text{
+    width:280px;
+    font: 13px "PT Sans", sans-serif;
+    line-height:2;
+    color: #000;
+    margin-bottom:30px;
+    z-index: 1;
+  }
+
+}
+#services-btn-1:checked ~ .services__type label[for="services-btn-1"],
+#services-btn-2:checked ~ .services__type label[for="services-btn-2"],
+#services-btn-3:checked ~ .services__type label[for="services-btn-3"]{
+  background-color: #fff;
+  color: #32425c;
+  border:none;
+  @include transition(all, 0.6s, ease);
+}
+#services-btn-1:checked ~ .services__more #delivery,
+#services-btn-2:checked ~ .services__more #guaranty,
+#services-btn-3:checked ~ .services__more #credit{
+  opacity:1;
+  @include transition(all, 0.6s, ease);
+}

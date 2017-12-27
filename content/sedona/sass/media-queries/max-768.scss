@@ -1,0 +1,207 @@
+@media screen and (max-width: 768px) {
+  .header-menu {
+    display: none;
+  }
+  .photo-page-background-img{
+    margin-bottom:35px;
+  }
+  .adaptive-menu {
+    display: block;
+  }
+  .main-background {
+    margin-bottom: 35px;
+    background: url("../../img/intro-triangle.png") no-repeat bottom,
+    url("../../img/text-index-mobile.png") no-repeat center,
+    url("../../img/back-desktop.jpg") no-repeat center;
+  }
+  .about-us__ {
+    &body {
+      margin-bottom: 35px;
+    }
+    &name{
+      width:100%;
+      min-width:100%;
+    }
+    &title {
+      width: 260px;
+    }
+    &text {
+      display: block;
+      width: 300px;
+      margin: 0 auto 35px auto;
+    }
+    &details {
+      float: none;
+      width: 100%;
+      height: 100%;
+      padding-top: 35px;
+    }
+    &description {
+      margin-bottom: 35px;
+    }
+    &image {
+      width: 100%;
+      height: 260px;
+    }
+  }
+  .services{
+    padding-left:20px;
+    margin-bottom:35px;
+    &__residential {
+      float: none;
+      width: 100%;
+      min-height: 100px;
+      background-position: left center;
+    }
+    &__food {
+      float: none;
+      width: 100%;
+      min-height: 100px;
+      background-position: left center;
+    }
+    &__souvenir {
+      float: none;
+      width: 100%;
+      min-height: 100px;
+      background-position: left center;
+    }
+    &__name{
+      margin:0;
+      padding: 40px 0 20px 120px;
+      text-align: left;
+    }
+    &__description{
+      width:100%;
+      margin:0;
+      padding:0 0 20px 120px;
+      text-align: left;
+    }
+  }
+  .about-us{
+    &__name{
+      width:100%;
+    }
+  }
+  .features{
+    margin-bottom:35px;
+    &__image{
+      float: none;
+      width:100%;
+    }
+    &__name{
+      max-width:100%;
+      width:100%;
+    }
+    &__block{
+      float: none;
+      width:100%;
+      height:auto;
+      padding-top:35px;
+    }
+    &__description{
+      margin-bottom:0;
+      padding-bottom:35px;
+    }
+    &__area{
+      float: none;
+      width:100%;
+    }
+    &__road{
+      float: none;
+      width:100%;
+    }
+    &__tourists{
+      float: none;
+      width:100%;
+    }
+  }
+  .sedona-photos{
+     padding: 0 60px;
+     margin-bottom:35px;
+     &__big-image{
+       margin:0 auto 80px auto;
+       background: url("../../img/photo-1-tablet.png")no-repeat center;
+     }
+     &__info{
+       top:100%;
+       background-color: #f2f2f2;
+     }
+     &__name{
+       color: #000;
+     }
+     &__author{
+       color: #333333;
+     }
+     &__counter{
+       color: #333333;
+     }
+     &__click{
+       background: url("../../img/like-icon-black.png") no-repeat 20% 100%;
+       &:active{
+         background: url("../../img/liked-icon-black.png") no-repeat 20% 100%;
+       }
+     }
+     &__photo-1{
+       width:50%;
+       margin-bottom:80px;
+     }
+     &__photo-2{
+       width:50%;
+       margin-bottom:80px;
+     }
+     &__photo-3{
+       width:50%;
+       margin-bottom:80px;
+     }
+   }
+
+  .sedona-video{
+    &__text{
+      margin-bottom:35px;
+    }
+    &__youtube{
+      width:100%;
+      height:310px;
+    }
+  }
+  .comment{
+    position: relative;
+    margin-bottom:35px;
+    &__text{
+      margin-bottom:35px;
+    }
+  }
+  .impression{
+    position: absolute;
+    top:800px;
+    float: none;
+    width:100%;
+    &__title{
+      margin-bottom:40px;
+    }
+    &__label{
+      margin-bottom:50px;
+    }
+  }
+  .introduce{
+    float: none;
+    width:100%;
+    &__title{
+      margin-bottom:40px;
+    }
+  }
+  .contact-info{
+    margin-bottom:310px;
+    &__title{
+      margin-bottom:20px;
+    }
+  }
+  .attractions{
+    &__title{
+      width:auto;
+    }
+    &__body{
+      padding:0 0 0 120px;
+    }
+  }
+}

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Technomart</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./dist/style.css">
+    <!--[if lte IE 9]><style>.wrapper{
+    display: none;
+}
+</style><![endif]-->
+</head>
+<body>
+<!--[if lte IE 9]>
+<p style="text-align:center; padding-top:100px; font: 30px/normal Arial, sans-serif; color: rgba(182, 2, 0, 0.87)">
+    Вы используете устаревшую версию браузера интернет-эксплорер 9 или ниже. Пожалуйста,
+    обновите ваш браузер до актуальной версии.
+</p>
+<![endif]-->
+<div class="wrapper">
+    <header class="main-header">
+        <div class="main-header__wrapper-status-bar">
+            <div class="main-header__status-bar inner">
+                <div class="main-header__wrapper-logo-search">
+                    <div class="main-header__logo"><a class="main-header__logo main-header__logo-active" href="index.html">ТЕХНОМАРТ</a></div>
+                    <div class="main-header__search">
+                        <form action="#"  method="get">
+                            <div class="main-header__form">
+                                <input type="text" class="main-header__field" name="search-form" placeholder="Поиск:">
+                                <span class="main-header__loupe1"></span>
+                                <span class="main-header__loupe2"></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="main-header__bookmarks"><a class="main-header__bookmarks-href" href="#">Закладки: 0</a></div>
+                <div class="main-header__basket"><a class="main-header__basket-href" href="#">Корзина: 0</a></div>
+                <div class="main-header__order"><a class="main-header__order-href" href="#">Оформить заказ</a></div>
+            </div>
+        </div>
+        <div class="main-header__wrapper-info">
+            <div class="main-header__info inner">
+                <div class="main-header__name">
+                    <h2 class="main-header__text">Интернет-магазин
+                        строительных материалов
+                        и инструментов для ремонта</h2>
+                </div>
+                <div class="main-header__contacts">
+                    <div class="main-header__phone">
+                        <span class="main-header__tel">+38 (0542) 25-00-00</span>
+                    </div>
+                    <div class="main-header__address">
+                        <span>г. Сумы, ул. Троицкая 4.</span>
+                    </div>
+                </div>
+                <div class="main-header__user-block">
+                    <a href="#" class="main-header__sign-in btn">Войти
+                        <span class="main-header__sign-ico"></span></a>
+
+                    <a href="#" class="main-header__sign-up btn">Регистрация</a>
+                </div>
+            </div>
+            <div class="main-navigation inner">
+                <ul class="main-navigation__bar">
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="index.html">Главная</a></li>
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="index.html#anchor-company">Компания</a></li>
+                    <li class="main-navigation__item"><a class="main-navigation__link main-navigation__link_active">Каталог</a></li>
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="#">Новости</a></li>
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="index.html#anchor-special">Спецпредложения</a></li>
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="index.html#anchor-delivery">Доставка</a></li>
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="index.html#anchor-contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="adaptive-header">
+        <div class="adaptive-header__status-bar">
+            <div class="adaptive-header__logo"><a class="adaptive-header__logo-link" href="index.html">ТЕХНОМАРТ</a></div>
+            <div class="touch-menu">
+                <span class="touch-menu__indicator"></span>
+                <span class="touch-menu__indicator"></span>
+                <span class="touch-menu__indicator"></span>
+            </div>
+        </div>
+        <div class="adaptive-navigation">
+            <ul class="adaptive-navigation__list">
+                <li class="adaptive-navigation__item"><div class="adaptive-navigation__link">
+                    <div class="adaptive-header__search">
+                        <form action="#"  method="get">
+                            <div class="adaptive-header__form">
+                                <input type="text" class="adaptive-header__field" name="search-form" placeholder="Поиск:">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </li>
+                <li class="adaptive-navigation__item"><a href="index.html" class="adaptive-navigation__link ">Главная</a></li>
+                <li class="adaptive-navigation__item"><a class="adaptive-navigation__link" href="index.html#anchor-company">Компания</a></li>
+                <li class="adaptive-navigation__item"><a class="adaptive-navigation__link">Каталог</a></li>
+                <li class="adaptive-navigation__item"><a class="adaptive-navigation__link" href="#">Новости</a></li>
+                <li class="adaptive-navigation__item"><a class="adaptive-navigation__link" href="index.html#anchor-special">Спецпредложения</a></li>
+                <li class="adaptive-navigation__item"><a class="adaptive-navigation__link" href="index.html#anchor-delivery">Доставка</a></li>
+                <li class="adaptive-navigation__item"><a class="adaptive-navigation__link" href="index.html#anchor-contacts">Контакты</a></li>
+                <li class="adaptive-navigation__item"><div class="adaptive-navigation__link">
+                    <div class="adaptive-header__bookmarks"><a class="adaptive-header__bookmarks-href" href="#">Закладки: 0</a></div>
+                </div></li>
+                <li class="adaptive-navigation__item"><a href="#anchor-delivery" class="adaptive-navigation__link">
+                    <div class="adaptive-header__basket"><div class="adaptive-header__basket-href" >Корзина: 0</div></div>
+                </a></li>
+                <li class="adaptive-navigation__item"><div class="adaptive-navigation__link">
+                    <div class="adaptive-header__order"><a class="adaptive-header__order-href" href="#">Оформить заказ</a></div>
+                </div></li>
+                <li class="adaptive-navigation__item"><a class="adaptive-navigation__link" href="#" id="adaptive-login">Войти</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="breadcrumbs inner">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+                <a href="index.html" class="breadcrumbs__link breadcrumbs__link-ico"></a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">Инструмент</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link_active">Перфораторы</a>
+            </li>
+        </ul>
+    </div>
+    <div class="catalog-title inner">
+        <h2 class="catalog-title__name">ПЕРФОРАТОРЫ</h2>
+    </div>
+
+    <div class="catalog-wrapper inner">
+        <div class="filters__title open-filters filters__title_adaptive"><span>Показать фильтр</span></div>
+        <div class="filters">
+            <div class="filters__close-wrapper open-filters">
+                <span class="filters__close filters__close_left"></span>
+                <span class="filters__close filters__close_right"></span>
+            </div>
+            <div class="filters__header">
+                <div class="filters__title"><span>ФИЛЬТР:</span></div>
+                    <div class="filters__name"><span>ЦЕНА:</span></div>
+                    <div class="selection-prices">
+                        <div class="selection-prices__element">
+                            <div class="selection-prices__price-line">
+                                <div class="selection-prices__toggle-left" style="left:0;"></div>
+                                <div class="selection-prices__price-line-color" style="width:80%; left:0;"></div>
+                                <div class="selection-prices__toggle-right" style="left:80%; "></div>
+                            </div>
+                        </div>
+                        <form action="#" enctype="application/x-www-form-urlencoded" method="get" class="selection-prices__cost">
+                            <div class="selection-prices__body">
+                                <input type="text" name="min-price" class="selection-prices__text" value="0">
+                                <div class="selection-prices__separator"><span>—</span></div>
+                                <input type="text" name="max-price" class="selection-prices__text" value="30000">
+                            </div>
+                            <div class="manufacture">
+                                <div class="manufacture__name filters__name"><span>ПРОИЗВОДИТЕЛИ:</span></div>
+                                <ul class="manufacture__list">
+                                    <li class="manufacture__item">
+                                        <label class="manufacture__label">
+                                            <input type="checkbox" class="manufacture__flag" checked>
+                                            <span class="manufacture__indicator"></span>
+                                            BOSCH</label>
+                                    </li>
+                                    <li class="manufacture__item">
+                                        <label class="manufacture__label">
+                                            <input type="checkbox" class="manufacture__flag">
+                                            <span class="manufacture__indicator"></span>
+                                            ИНТЕРСКОЛ</label>
+                                    </li>
+                                    <li class="manufacture__item">
+                                        <label class="manufacture__label">
+                                            <input type="checkbox" class="manufacture__flag" checked>
+                                            <span class="manufacture__indicator"></span>
+                                            MAKIta</label>
+                                    </li>
+                                    <li class="manufacture__item">
+                                        <label class="manufacture__label">
+                                            <input type="checkbox" class="manufacture__flag">
+                                            <span class="manufacture__indicator"></span>
+                                            Dewalt</label>
+                                    </li>
+                                    <li class="manufacture__item">
+                                        <label class="manufacture__label">
+                                            <input type="checkbox" class="manufacture__flag">
+                                            <span class="manufacture__indicator"></span>
+                                            Hitachi</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="power">
+                                <div class="power__name filters__name"><span>ПИТАНИЕ:</span></div>
+                                <ul class="power__list">
+                                    <li class="power__item manufacture__item">
+                                        <label class="power__label">
+                                            <input type="radio" value="1" name="power" class="power__flag manufacture__flag" checked>
+                                            <span class="power__indicator"></span>
+                                            Аккумуляторные
+                                        </label>
+                                    </li>
+                                    <li class="power__item manufacture__item">
+                                        <label class="power__label">
+                                            <input type="radio" value="1" name="power" class="power__flag manufacture__flag">
+                                            <span class="power__indicator"></span>
+                                            Сетевые
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="submit" name="submit-filters" class="selection-prices__btn" value="ПОКАЗАТЬ">
+                        </form>
+                    </div>
+
+                </div>
+            <div class="filter__body"></div>
+        </div>
+        <div class="content-wrapper">
+            <div class="sorting">
+                <div class="sorting__name"><span>СОРТИРОВКА:</span></div>
+                <form action="#" class="sorting__type" method="get" enctype="application/x-www-form-urlencoded">
+                    <ul class="types">
+                        <li class="types__item">
+                            <label class="types__label">
+                                <input type="radio" name="sorting__type" value="0" class="types__radio" checked>
+                                <span class="types__text">ПО ЦЕНЕ</span>
+                            </label>
+                        </li>
+                        <li class="types__item">
+                            <label class="types__label">
+                                <input type="radio" name="sorting__type" value="1" class="types__radio">
+                                <span class="types__text">ПО ТИПУ</span>
+                            </label>
+                        </li>
+                        <li class="types__item">
+                            <label class="types__label">
+                                <input type="radio" name="sorting__type" value="2" class="types__radio">
+                                <span class="types__text">ПО ФУНКЦИОНАЛУ</span>
+                            </label>
+                        </li>
+                    </ul>
+                </form>
+                <form action="#" class="sorting__direction" method="get" enctype="application/x-www-form-urlencoded">
+                    <ul class="directions">
+                        <li class="directions__item">
+                            <label>
+                                <input type="radio" class="directions__flag" name="directions-radio" value="0" checked>
+                                <span class="directions__indicator directions__indicator_left"></span>
+                            </label>
+                        </li>
+                        <li class="directions__item">
+                            <label>
+                                <input type="radio" class="directions__flag" name="directions-radio" value="1">
+                                <span class="directions__indicator directions__indicator_right"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="catalog">
+                <!--1-->
+                <div class="products__item">
+                    <span class="products__new"></span>
+                    <span class="products__ico products__bosh-3000"></span>
+                    <div class="purchase">
+                        <a href="#" class="purchase__buy">КУПИТЬ</a>
+                        <a href="#" class="purchase__bookmarks">В закладки</a>
+                    </div>
+                    <div class="products__name">
+                        <p>Перфоратор BOSCH
+                            BFG 3000</p>
+                    </div>
+                    <div class="products__old-price products__old-price-active"><span>22500 Р.</span></div>
+                    <div class="products__price"><span>15500 Р.</span></div>
+                </div>
+                <!--2-->
+                <div class="products__item">
+                    <span class="products__new"></span>
+                    <span class="products__ico products__bosh-6000"></span>
+                    <div class="purchase">
+                        <a href="#" class="purchase__buy">КУПИТЬ</a>
+                        <a href="#" class="purchase__bookmarks">В закладки</a>
+                    </div>
+                    <div class="products__name">
+                        <p>Перфоратор BOSCH
+                            BFG 6000</p>
+                    </div>
+                    <div class="products__old-price products__old-price-active"><span>30500 Р.</span></div>
+                    <div class="products__price"><span>25500 Р.</span></div>
+                </div>
+                <!--3-->
+                <div class="products__item">
+                    <span class="products__new  products__new-active"></span>
+                    <span class="products__ico products__bosh-2000"></span>
+                    <div class="purchase">
+                        <a href="#" class="purchase__buy">КУПИТЬ</a>
+                        <a href="#" class="purchase__bookmarks">В закладки</a>
+                    </div>
+                    <div class="products__name">
+                        <p>Перфоратор BOSCH
+                            BFG 2000</p>
+                    </div>
+                    <div class="products__old-price"><span>32500 Р.</span></div>
+                    <div class="products__price"><span>12500 Р.</span></div>
+                </div>
+                <!--4-->
+                <div class="products__item">
+                    <span class="products__new"></span>
+                    <span class="products__ico products__bosh-3000"></span>
+                    <div class="purchase">
+                        <a href="#" class="purchase__buy">КУПИТЬ</a>
+                        <a href="#" class="purchase__bookmarks">В закладки</a>
+                    </div>
+                    <div class="products__name">
+                        <p>Перфоратор BOSCH
+                            BFG 3000</p>
+                    </div>
+                    <div class="products__old-price products__old-price-active"><span>22500 Р.</span></div>
+                    <div class="products__price"><span>15500 Р.</span></div>
+                </div>
+                <!--5-->
+                <div class="products__item">
+                    <span class="products__new products__new-active"></span>
+                    <span class="products__ico products__bosh-6000"></span>
+                    <div class="purchase">
+                        <a href="#" class="purchase__buy">КУПИТЬ</a>
+                        <a href="#" class="purchase__bookmarks">В закладки</a>
+                    </div>
+                    <div class="products__name">
+                        <p>Перфоратор BOSCH
+                            BFG 6000</p>
+                    </div>
+                    <div class="products__old-price products__old-price-active"><span>30500 Р.</span></div>
+                    <div class="products__price"><span>25500 Р.</span></div>
+                </div>
+                <!--6-->
+                <div class="products__item">
+                    <span class="products__new  "></span>
+                    <span class="products__ico products__bosh-2000"></span>
+                    <div class="purchase">
+                        <a href="#" class="purchase__buy">КУПИТЬ</a>
+                        <a href="#" class="purchase__bookmarks">В закладки</a>
+                    </div>
+                    <div class="products__name">
+                        <p>Перфоратор BOSCH
+                            BFG 2000</p>
+                    </div>
+                    <div class="products__old-price"><span>32500 Р.</span></div>
+                    <div class="products__price"><span>12500 Р.</span></div>
+                </div>
+                <!--7-->
+                <div class="products__item">
+                    <span class="products__new products__new-active"></span>
+                    <span class="products__ico products__bosh-3000"></span>
+                    <div class="purchase">
+                        <a href="#" class="purchase__buy">КУПИТЬ</a>
+                        <a href="#" class="purchase__bookmarks">В закладки</a>
+                    </div>
+                    <div class="products__name">
+                        <p>Перфоратор BOSCH
+                            BFG 3000</p>
+                    </div>
+                    <div class="products__old-price products__old-price-active"><span>22500 Р.</span></div>
+                    <div class="products__price"><span>15500 Р.</span></div>
+                </div>
+                <!--8-->
+                <div class="products__item">
+                    <span class="products__new"></span>
+                    <span class="products__ico products__bosh-6000"></span>
+                    <div class="purchase">
+                        <a href="#" class="purchase__buy">КУПИТЬ</a>
+                        <a href="#" class="purchase__bookmarks">В закладки</a>
+                    </div>
+                    <div class="products__name">
+                        <p>Перфоратор BOSCH
+                            BFG 6000</p>
+                    </div>
+                    <div class="products__old-price products__old-price-active"><span>30500 Р.</span></div>
+                    <div class="products__price"><span>25500 Р.</span></div>
+                </div>
+                <!--9-->
+                <div class="products__item">
+                    <span class="products__new  "></span>
+                    <span class="products__ico products__bosh-2000"></span>
+                    <div class="purchase">
+                        <a href="#" class="purchase__buy">КУПИТЬ</a>
+                        <a href="#" class="purchase__bookmarks">В закладки</a>
+                    </div>
+                    <div class="products__name">
+                        <p>Перфоратор BOSCH
+                            BFG 2000</p>
+                    </div>
+                    <div class="products__old-price"><span>32500 Р.</span></div>
+                    <div class="products__price"><span>12500 Р.</span></div>
+                </div>
+            </div>
+            <div class="paginator">
+                <ul class="paginator__list">
+                    <li class="paginator__item"><a class="paginator__link paginator__link_active">1</a></li>
+                    <li class="paginator__item"><a href="#" class="paginator__link">2</a></li>
+                    <li class="paginator__item"><a href="#" class="paginator__link">3</a></li>
+                    <li class="paginator__item"><a href="#" class="paginator__link paginator__link_next">СЛЕДУЮЩАЯ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="catalog-seo">
+        <div class="catalog-seo__name inner"><h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2></div>
+        <div class="catalog-seo__text inner"><p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer__body inner">
+            <div class="footer__information">
+                <div class="footer__logo main-header__logo">
+                    <a class="main-header__logo main-header__logo-active" href="index.html">ТЕХНОМАРТ</a>
+                </div>
+                <div class="footer__address">
+                    <span>г. Сумы, ул. Троицкая 4.</span>
+                </div>
+            </div>
+            <div class="footer__navigation">
+                <ul class="menu-1">
+                    <li class="menu-1__item"><a href="index.html#anchor-company" class="menu-1__link">Компания</a></li>
+                    <li class="menu-1__item"><a href="#" class="menu-1__link">Новости</a></li>
+                    <li class="menu-1__item"><a class="menu-1__link menu-1__link_active">Каталог</a></li>
+                    <li class="menu-1__item"><a href="index.html#anchor-delivery" class="menu-1__link">Доставка</a></li>
+                    <li class="menu-1__item"><a href="index.html#anchor-contacts" class="menu-1__link">Контакты</a></li>
+                </ul>
+                <ul class="menu-2">
+                    <li class="menu-2__item"><a href="#" class="menu-2__link">Материалы</a></li>
+                    <li class="menu-2__item"><a href="#" class="menu-2__link">Техника</a></li>
+                    <li class="menu-2__item"><a href="#" class="menu-2__link">Инструмент</a></li>
+                    <li class="menu-2__item"><a href="index.html#anchor-special" class="menu-2__link">Спецпредложения</a></li>
+                    <!--для активного положения менб 2 использовать класс 'menu-2__link_active' -->
+                </ul>
+            </div>
+        </div>
+        <div class="footer__meta ">
+            <div class="footer__meta-wrapper inner">
+                <div class="footer__copy">
+                    <p>© 2010–2017 Компания «Техномарт» Все права защищены</p>
+                </div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social footer__social-vk"></a>
+                    <a href="#" class="footer__social footer__social-fb"></a>
+                    <a href="#" class="footer__social footer__social-inst"></a>
+                </div>
+                <div class="footer__mails">
+                    <p>Обратная связь:</p>
+                    <a href="mailto:olddex@gmail.com" class="footer__mail-link">olddex@gmail.com</a>
+                </div>
+                <div class="footer__dev">
+                    <span>Разработано —</span>
+                    <a href="#" class="footer__dev-link">Web-Studio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<div class="write-us">
+    <span class="write-us__close"></span>
+    <form action="#" class="write-us__form" name="writeUs" enctype="application/x-www-form-urlencoded">
+        <div class="write-us__header">
+            <div class="write-us__inner">
+                <span class="write-us__title">Ваше имя:</span>
+                <input type="text" class="write-us__field" placeholder="Представьтесь, пожалуйста" required>
+            </div>
+            <div class="write-us__inner">
+                <span class="write-us__title">Ваш e-mail:</span>
+                <input type="email" class="write-us__field" placeholder="Для отправки ответа" required>
+            </div>
+        </div>
+        <div class="write-us__footer">
+            <label for="textArea" class="write-us__title">Текст письма:</label>
+            <textarea id="textArea" name="textArea" cols="30" rows="10" class="write-us__message" placeholder="В свободной форме" required></textarea>
+        </div>
+        <div class="write-us__submit-wrapper">
+            <div class="write-us__submit-inner">
+                <input type="submit" class="write-us__submit global-link">
+            </div>
+        </div>
+    </form>
+
+</div>
+<div class="login">
+    <span class="write-us__close login__close"></span>
+    <div class="login__inner">
+        <p class="login__title">Личный кабинет</p>
+        <p class="login__description">Введите ваш логин и пароль</p>
+        <form action="#" class="login__form" name="login">
+            <input type="text" class="login__field login__margin-bottom-10" placeholder="Логин" required>
+            <input type="password" class="login__field login__margin-bottom-20" placeholder="Пароль" required>
+            <div class="login__checkbox-inner">
+                <div class="manufacture__item login__checkbox-item">
+                    <label class="manufactures__label login__checkbox">
+                        <input type="checkbox" class="manufacture__flag " checked>
+                        <span class="manufacture__indicator "></span>
+                        Запомнить меня</label>
+                </div>
+                <a href="#" class="login__forgot-password">Напомнить пароль</a>
+            </div>
+            <div class="login__submit-inner">
+                <input type="submit" class="login__btn global-link" value="Войти">
+                <a href="#" class="login__registration-btn global-link">Зарегистрироваться</a>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="registration">
+    <span class="write-us__close registration__close"></span>
+    <div class="registration__inner">
+        <p class="registration__title">Регистрация</p>
+        <p class="registration__description">Заполните форму регистрации</p>
+        <form action="#" class="registration__form" name="registration">
+            <span class="registration__text">Имя*</span>
+            <input type="text" class="registration__field" name="registrationFirstName" placeholder="Ваше имя">
+            <span class="registration__text">Фамилия</span>
+            <input type="text" class="registration__field" name="registrationLastName" placeholder="Ваша фамилия">
+            <span class="registration__text">Телефон</span>
+            <input type="tel" class="registration__field" name="registrationTel" placeholder="Для связи с Вами">
+            <span class="registration__text">Е-мейл*</span>
+            <input type="email" class="registration__field" name="registrationEmail" placeholder="Email является логином для входа">
+            <span class="registration__text">Пароль*</span>
+            <input type="password" class="registration__field" name="registrationPassword" placeholder="Введите желаемы пароль" >
+            <span class="registration__text">Повторите пароль*</span>
+            <input type="password" class="registration__field registration__field_margin" name="registrationPasswordRepeat" placeholder="Повторите пароль" >
+            <span class="registration__text registration__text_checker-password registration__text_checker">Пароли должны совпадать</span>
+            <span class="registration__text registration__text_checker-fields registration__text_checker">Заполните поля отмеченные звездочкой *</span>
+            <span class="registration__text registration__text_checker-email registration__text_checker">Некорректный емейл *</span>
+            <input type="submit" class="registration__submit global-link" name="registrationSubmit" value="Зарегистрироваться">
+        </form>
+    </div>
+</div>
+<div class="modal-background"></div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/modals.js"></script>
+<script src="js/registrationChecker.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/filters.js"></script>
+</body>
+</html>

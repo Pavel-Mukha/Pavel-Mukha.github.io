@@ -1,0 +1,82 @@
+@mixin font20() {
+  font: 20px/normal "Lato", sans-serif;
+  color: #ffffff;
+}
+
+/*placeholder*/
+@mixin placeholder ($color) {
+  &::-webkit-input-placeholder {color:$color;}
+  &:-moz-placeholder {color:$color;}
+  &::-moz-placeholder {color:$color;}
+  &:-ms-input-placeholder {color:$color;}
+}
+@mixin placeholder_font-size ($fz) {
+  &::-webkit-input-placeholder {font-size:$fz;}
+  &:-moz-placeholder {font-size:$fz;}
+  &::-moz-placeholder {font-size:$fz;}
+  &:-ms-input-placeholder {font-size:$fz;}
+}
+
+
+
+/*transition*/
+
+@mixin transition ($prop, $time, $type) {
+  -webkit-transition: $prop $time $type;
+  -moz-transition: $prop $time $type;
+  -ms-transition: $prop $time $type;
+  -o-transition: $prop $time $type;
+  transition: $prop $time $type;
+}
+
+  /* size */
+
+@mixin size($width: 100%, $height: auto){
+  width:$width;
+  height: $height;
+}
+
+/* transformations */
+
+@mixin scale ($x: 1, $y: 1){
+  -webkit-transform: scale($x,$y);
+  -moz-transform: scale($x,$y);
+  -ms-transform: scale($x,$y);
+  -o-transform: scale($x,$y);
+  transform: scale($x,$y);
+}
+@mixin rotate ($deg){
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
+@mixin translate($x,$y){
+  -webkit-transform: translate($x, $y);
+  -moz-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+/* box-shadows */
+
+@mixin box-shadow($x, $y, $blur, $scale, $color) {
+  -webkit-box-shadow: $x $y $blur $scale $color;
+  -moz-box-shadow: $x $y $blur $scale $color;
+  box-shadow: $x $y $blur $scale $color;
+}
+@mixin box-shadow-i($inset, $x, $y, $blur, $scale, $color) {
+  -webkit-box-shadow: $inset $x $y $blur $scale $color;
+  -moz-box-shadow: $inset $x $y $blur $scale $color;
+  box-shadow: $inset $x $y $blur $scale $color;
+}
+
+/* border-radius */
+
+@mixin border-radius($x){
+  -webkit-border-radius:$x;
+  -moz-border-radius:$x;
+  border-radius:$x;
+}

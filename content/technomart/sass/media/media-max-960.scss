@@ -1,0 +1,120 @@
+@media screen and (max-width: 960px){
+  .map{
+    margin-top:-200px;
+    margin-left:-350px;
+    &__frame{
+      width:700px;
+      height:400px;
+    }
+  }
+  .main-header {
+    padding-bottom: 35px;
+    &__info{
+      height:120px;
+    }
+  }
+  .features{
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:15px;
+    &__items{
+      flex-direction:row;
+      justify-content:space-between;
+    }
+    &__item{
+      margin-right:20px;
+    }
+}
+.products{
+  margin-bottom:15px;
+  &__body{
+    justify-content:center;
+  }
+}
+.vendors{
+  margin-bottom:15px;
+  &__body{
+    justify-content:center;
+  }
+}
+
+.services {
+  margin-bottom:50px;
+  &__wrapper{
+  }
+  &__header{
+    padding-top:35px;
+    padding-bottom:40px;
+  }
+  &__title{
+    margin-bottom:15px;
+  }
+  &__body{
+    margin-bottom:35px;
+  }
+  &__bg-image_delivery{
+    right: -108px;
+  }
+  &__bg-image_guaranty{
+    right: -88px;
+  }
+  &__bg-image_credit {
+    right: -105px;
+  }
+  &__type::after{
+    transform: scaleY(0.87);
+    top: -40px;
+  }
+ }
+  .about-us{
+    margin-bottom:50px;
+  }
+  .company{
+    &__name{
+      margin-bottom:15px;
+    }
+    &__description{
+      margin-bottom:15px;
+    }
+    &__info{
+      margin-bottom:20px;
+    }
+    &__item{
+      margin-bottom:10px;
+    }
+  }
+  .footer {
+    &__body{
+      margin-bottom:35px;
+    }
+    &__meta{
+      padding-top:25px;
+      padding-bottom:25px;
+    }
+  }
+
+    /* catalog page */
+
+  .catalog {
+    justify-content:center;
+  }
+    /* paginator */
+
+  .paginator{
+    justify-content:flex-end;
+  }
+
+    /* seo */
+  .catalog-seo{
+    padding-top:35px;
+    &__name{
+      margin-bottom:15px;
+    }
+    &__text{
+      margin-bottom:35px;
+    }
+  }
+
+
+
+}

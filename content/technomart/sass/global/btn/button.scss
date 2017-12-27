@@ -1,0 +1,19 @@
+.btn {
+  font-family:"Cuprum", sans-serif;
+  font-size:21px;
+  line-height:1;
+  color: #000;
+  padding:10px;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  @include transition(color, 0.2s, ease);
+  &:hover{
+    color: #ee3643;
+  }
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

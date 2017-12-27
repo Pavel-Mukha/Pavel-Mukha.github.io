@@ -1,0 +1,97 @@
+.sedona-photos{
+  margin-bottom:70px;
+  &__header{text-align: center;}
+  &__title{
+    font-size:30px;
+    font-weight:bold;
+    margin-bottom:30px;
+  }
+  &__text{
+    width:440px;
+    margin: 0 auto 70px auto;
+    line-height:1.71;
+    color: #333333;
+  }
+  &__big-image{
+    position: relative;
+    max-width:1200px;
+    height:400px;
+    cursor: pointer;
+    background: url("../../img/photo-1-desktop.jpg")no-repeat center;
+  }
+  &__info{
+    display: block;
+    position: relative;
+    height:80px;
+    background-color: rgba(0, 0, 0, 0.3);
+    top:80%;
+  }
+  &__description{
+    float: left;
+    width:16.66%;
+    padding:20px 0 0 20px;
+    color: #ffffff;
+    font-weight:bold;
+    cursor: default;
+  }
+  &__author{
+    font-weight:normal;
+    text-transform: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{color: #81b3d2;}
+    &:active{opacity: .3;}
+  }
+  &__like{
+    float: right;
+    width:8.33%;
+    padding:30px 20px 0 0;
+    color: #ffffff;
+    font-weight:bold;
+    text-align: right;
+  }
+  &__click{
+    display: inline-block;
+    vertical-align: middle;
+    width:23px;
+    height:21px;
+    background: url("../../img/like-icon.png")no-repeat 20% 100%;
+    cursor: pointer;
+    &:hover{opacity: 0.5;}
+    &:active{
+      opacity: 1;
+      background: url("../../img/liked-icon.png")no-repeat 20% 100%;
+    }
+  }
+  &__counter{
+    vertical-align: middle;
+    margin-left:5px;
+    display: inline-block;
+    cursor: default;
+    &:hover{opacity: 1;}
+  }
+  &__photo-1{
+    float: left;
+    width:33.33%;
+    height:267px;
+    cursor: pointer;
+    background: url("../../img/photo-2-desktop.jpg")no-repeat center;
+  }
+  &__photo-2{
+    float: left;
+    width:33.33%;
+    height:267px;
+    cursor: pointer;
+    background: url("../../img/photo-3-desktop.jpg")no-repeat center;
+  }
+  &__photo-3{
+    float: left;
+    width:33.33%;
+    height:267px;
+    cursor: pointer;
+    background: url("../../img/photo-4-desktop.jpg")no-repeat center;
+  }
+  &__info_small{top:70%;}
+  &__description_small{width:50%;}
+  &__like_small{width:25%;}
+}

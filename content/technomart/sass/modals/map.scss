@@ -1,0 +1,19 @@
+.map{
+  position: fixed;
+  top:50%;
+  left:50%;
+  margin-top:-210px;
+  margin-left:-450px;
+  box-shadow: 0 10px 30px 10px rgba(0,0,0, .25);
+  border:2px solid #999999;
+  &__frame{
+    width:900px;
+    height:420px;
+  }
+  &__close{
+    right:-30px;
+  }
+}
+.map{
+  display: none;
+}
