@@ -1,4 +1,4 @@
-function menuShow(e) {
+function menuShow(event) {
     event.preventDefault();
     adaptiveMenuList.setAttribute('style', 'display:block; height:0; overflow:hidden');
     var heightMenu = 0;
@@ -16,7 +16,7 @@ function menuShow(e) {
     }
     requestAnimationFrame(animate);
 }
-function menuHide(e) {
+function menuHide(event) {
     event.preventDefault();
     var heightMenu = adaptiveMenuList.scrollHeight;
     function animate() {
