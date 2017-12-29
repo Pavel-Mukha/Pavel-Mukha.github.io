@@ -1,0 +1,42 @@
+.main-footer{
+  margin-bottom:70px;
+  &__social{
+    position: relative;
+    display: inline-block;
+    width:78px;
+    height:78px;
+    margin-right:5px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover{
+      background-color: #e74246;
+    }
+    &:active{
+      background-color: #d7373b;
+    }
+  }
+  &__title{
+    margin-bottom:10px;
+    font-size:36px;
+    line-height:1;
+    font-weight:bold;
+  }
+  &__text{
+    color: #444444;
+    line-height:1.5;
+  }
+}
+.fa{
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top:-10px;
+  margin-left:-9px;
+  font-size:20px;
+  color: #ffffff;
+  &:active{
+    color: #e37376;
+  }
+}

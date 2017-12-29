@@ -1,0 +1,41 @@
+.features{
+  border-bottom:2px solid #eeeeee;
+  padding-bottom:80px;
+  margin-bottom:80px;
+  &__item{
+    min-height:350px;
+    padding-top:170px;
+    &_sites{
+      background: url("../img/illustration-1.jpg")no-repeat 15px top;
+    }
+    &_apps{
+      background: url("../img/illustration-2.jpg")no-repeat 15px top;
+    }
+    &_presents{
+      background: url("../img/illustration-3.jpg")no-repeat 15px top;
+    }
+  }
+  &__title{
+    margin-bottom:10px;
+    font-size:24px;
+    line-height:1.25;
+    color: #000000;
+    font-weight:bold;
+    text-transform: uppercase;
+  }
+  &__text{
+    width:260px;
+    margin-bottom:35px;
+    color: #283136;
+    line-height:1.71;
+  }
+  &__btn{
+    padding:10px 40px;
+    &_green{
+      background-color: #00ca74;
+    }
+    &_yellow{
+      background-color: #efc84a;
+    }
+  }
+}

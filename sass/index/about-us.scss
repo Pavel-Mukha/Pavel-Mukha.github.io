@@ -1,0 +1,61 @@
+.about-us{
+  border-bottom:2px solid #eeeeee;
+  padding-bottom:70px;
+  margin-bottom:45px;
+  &__title{
+    margin-bottom:30px;
+    font-size:45px;
+    font-weight:400;
+  }
+  &__description{
+    margin-bottom:45px;
+    color: #283136;
+    line-height:1.5;
+  }
+  &__list-name{
+    margin-bottom:30px;
+    line-height:1.5;
+    font-weight:bold;
+    text-transform: uppercase;
+  }
+  &__item{
+    position: relative;
+    padding-left:35px;
+    margin-bottom:10px;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left:0;
+      width:25px;
+      height:2px;
+      margin-top:-1px;
+      background-color: #fb565a;
+    }
+  }
+  &__stats{
+    background: url("../img/nerds-illustration.jpg.png")no-repeat center top;
+
+    padding-top:232px;
+  }
+  &__text-year{
+    margin-bottom:50px;
+    line-height:1.5;
+    font-weight:bold;
+    text-transform: uppercase;
+  }
+  &__percent-title{
+    display: block;
+    margin-bottom:25px;
+    font-size:45px;
+    font-weight:bold;
+    line-height:1;
+  }
+  &__percent-text{
+    line-height:1.125;
+    color: #283136;
+  }
+  &__percent-sign{
+    font-size:30px;
+  }
+}

@@ -1,0 +1,65 @@
+.header-wrapper{
+  background-color: #eeeeee;
+  margin-bottom:80px;
+}
+.main-header{
+  min-height:120px;
+  padding-top:40px;
+  &__logo:not(.main-header__logo_active){
+    &:hover{
+      opacity:0.8;
+    }
+    &:active{
+      opacity:0.3;
+    }
+  }
+  &__basket{
+    display: inline-block;
+    padding-top:35px;
+    text-align: right;
+  }
+  &__basket-link{
+    padding-left:40px;
+    padding-bottom:8px;
+    color: #000;
+    background: url("../img/cart-icon.png")no-repeat left 3px;
+    &:hover{
+      color: #fb565a;
+      text-decoration: none;
+    }
+    &:active{opacity:0.3;}
+  }
+  &__basket-link_active{
+    border-bottom:2px solid #fb565a;
+  }
+}
+.header-menu{
+  padding-top:35px;
+  text-align: center;
+  font-size: 0;
+  &__list{margin-left:-55px;}
+  &__item{display: inline-block;}
+  &__link{
+    display: block;
+    margin-left:40px;
+    font-size:16px;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  &__link:not(.header-menu__link_active){
+    &:hover{
+      color: #fb565a;
+      text-decoration: none;
+    }
+    &:active{opacity:0.3;}
+  }
+  &__link_active{
+    padding-bottom:8px;
+    border-bottom:2px solid #fb565a;
+    cursor: default;
+  }
+}
+.inner{
+  margin: 0 auto;
+}

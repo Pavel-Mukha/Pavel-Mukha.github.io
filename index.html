@@ -5,21 +5,184 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Портфолио</title>
 </head>
 <body>
-<a href="content/technomart/index.html" style="text-align: center">Technomart</a><br>
-<a href="content/sedona/index.html" style="text-align: center">sedona</a>
-<script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
-<div id="SkypeButton_Call_charokrad_1">
- <script type="text/javascript">
- Skype.ui({
- "name": "call",
- "element": "SkypeButton_Call_charokrad_1",
- "participants": ["charokrad"],
- "imageSize": 32
- });
- </script>
-</div>
+    <div class="page-wrapper">
+        <div class="header-wrapper">
+            <div class="container">
+                <header class="main-header">
+                        <div class="row">
+                            <div class="main-header__logo main-header__logo_active col-md-3">
+                                <a class="main-header__logo-img"><img src="img/nerds-logo.png" alt="logo" width="160" height="65"></a>
+                            </div>
+                            <nav class="header-menu col-md-6">
+                                <ul class="header-menu__list row">
+                                    <!-- для активного состояния элемента меню нужно использовать класс - header-menu__link_active -->
+                                    <li class="header-menu__item"><a href="#" class="header-menu__link">Студия</a></li>
+                                    <li class="header-menu__item"><a href="#" class="header-menu__link">Клиенты</a></li>
+                                    <li class="header-menu__item"><a href="#" class="header-menu__link">Магазин</a></li>
+                                    <li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
+                                </ul>
+                            </nav>
+                            <div class="main-header__basket col-md-3"><a href="#" class="main-header__basket-link">Корзина</a></div>
+                            <!-- для активного состояния корзины нужно использовать класс - main-header__basket-link_active -->
+                        </div>
+                </header>
+                <div class="row">
+                    <div class="slider col-md-12">
+                        <div class="slider__control">
+                            <input type="radio" class="slider__radio" id="btn-1" name="slider" value="0" checked>
+                            <input type="radio" class="slider__radio" id="btn-2" name="slider" value="1">
+                            <input type="radio" class="slider__radio" id="btn-3" name="slider" value="2">
+                            <label class="slider__controls slider__controls_1" for="btn-1"></label>
+                            <label class="slider__controls slider__controls_2" for="btn-2"></label>
+                            <label class="slider__controls slider__controls_3" for="btn-3"></label>
+                        </div>
+                        <div class="row slider__slide slider__slide_1">
+                            <div class="slider__description col-md-5">
+                                <p class="slider__title">Долго, дорого, скрупулезно.</p>
+                                <p class="slider__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                                <a href="#" class="slider__btn btn">УЗНАТЬ БОЛЬШЕ</a>
+                            </div>
+                            <div class="slider__image slider__image_1 col-md-7">
+                            </div>
+                        </div>
+                        <div class="row slider__slide slider__slide_2">
+                            <div class="slider__description col-md-5">
+                                <p class="slider__title">Любим математику как никто другой</p>
+                                <p class="slider__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                                <a href="#" class="slider__btn btn">УЗНАТЬ БОЛЬШЕ</a>
+                            </div>
+                            <div class="slider__image slider__image_2 col-md-7">
+                            </div>
+                        </div>
+                        <div class="row slider__slide slider__slide_3">
+                            <div class="slider__description col-md-5">
+                                <p class="slider__title">Только ночь, только хардкор</p>
+                                <p class="slider__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                                <a href="#" class="slider__btn btn">УЗНАТЬ БОЛЬШЕ</a>
+                            </div>
+                            <div class="slider__image slider__image_3 col-md-7">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="features row">
+                <div class="features__item features__item_sites col-md-4">
+                    <p class="features__title">Веб-сайты</p>
+                    <p class="features__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                    <a href="#" class="btn features__btn">ЗАКАЗАТЬ</a></div>
+                <div class="features__item features__item_apps col-md-4">
+                    <p class="features__title">Приложения</p>
+                    <p class="features__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+                    <a href="#" class="btn features__btn features__btn_green">ЗАКАЗАТЬ</a></div>
+                <div class="features__item features__item_presents col-md-4">
+                    <p class="features__title">Презентации</p>
+                    <p class="features__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+                    <a href="#" class="btn features__btn features__btn_yellow">ЗАКАЗАТЬ</a></div>
+            </div>
+            <div class="about-us row">
+                <div class="about-us__information col-md-8">
+                    <h3 class="about-us__title">Мы — маленькая, но гордая
+                        дизайн-студия. </h3>
+                    <p class="about-us__description">Исповедуем принципы минимализма и чистоты. Ставим математический
+                        расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+                    <p class="about-us__list-name">Выполняем заказы на разработку:</p>
+                    <ul class="about-us__list">
+                        <li class="about-us__item">	Веб-сайтов любой сложности</li>
+                        <li class="about-us__item">	Мобильных приложений для iOS и Android</li>
+                        <li class="about-us__item">	Слайдшоу и видео для корпоративных презентаций</li>
+                    </ul>
+
+                </div>
+                <div class="about-us__stats col-md-4">
+                    <p class="about-us__text-year">с 2004 года Любим точность во всем:</p>
+                    <div class="about-us__inner row">
+                        <div class="about-us__percent col-sm-4">
+                            <span class="about-us__percent-title">146<sup class="about-us__percent-sign">%</sup></span>
+                            <span class="about-us__percent-text">Уровень самоотдачи</span>
+                        </div>
+                        <div class="about-us__percent col-sm-4">
+                            <span class="about-us__percent-title">100<sup class="about-us__percent-sign">%</sup></span>
+                            <span class="about-us__percent-text">Соблюдение cроков</span>
+                        </div>
+                        <div class="about-us__percent col-sm-4">
+                            <span class="about-us__percent-title">50<sup class="about-us__percent-sign">%</sup></span>
+                            <span class="about-us__percent-text">Минимальная предоплата</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services row">
+                <div class="services__item services__item_sedona col-md-3">
+                    <a href="content/sedona/index.html" target="_blank" class="services__link" title="Откроется в новой вкладке"><img src="img/sedona-logo.png" alt="sedona link" class="services__img" width="102" height="83"></a>
+                    <div class="services__line"></div>
+                </div>
+                <div class="services__item services__item_barber col-md-3">
+                    <a href="#" class="services__link" target="_blank" title="Откроется в новой вкладке"><img src="img/s-2.png" alt="barbershop link" class="services__img" width="209" height="90" </a>
+                    <div class="services__line"></div>
+                </div>
+                <div class="services__item services__item_pink col-md-3">
+                    <a href="#" class="services__link" target="_blank" title="Откроется в новой вкладке"><img src="img/s-3.png" alt="pink link" class="services__img" width="185" height="52"></a>
+                    <div class="services__line "></div>
+                </div>
+                <div class="services__item services__item_mishka col-md-3">
+                    <a href="#" class="services__link" target="_blank" title="Откроется в новой вкладке"><img src="img/s-4.png" alt="mishka link" class="services__img" width="173" height="84"></a>
+                    <div class="services__line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <div class="visit-card">
+                <p class="visit-card__title">NЁRDS DESIGN STUDIO</p>
+                <p class="visit-card__address">
+                    40000, Украина, Сумы<br>
+                    ул. Соборная 1
+                </p>
+                <p class="visit-card__tel">тел. +38 (095) 882-19-33</p>
+                <a href="mailto:olddex@gmail.com" class="visit-card__email">olddex@gmail.com</a>
+                <div class="visit-card__skype">
+
+                    <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+                    <div id="SkypeButton_Call_charokrad_1">
+                     <script type="text/javascript">
+                     Skype.ui({
+                         "name": "chat",
+                         "element": "SkypeButton_Call_charokrad_1",
+                         "participants": ["charokrad"],
+                         "imageSize": 24
+                     });
+                     </script>
+                    </div>
+
+                </div>
+                <a href="#" class="visit-card__btn btn">Напишите нам</a>
+            </div>
+            <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2515.6750081289806!2d34.79981271574814!3d50.911229279541544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41290220b54f6be5%3A0x41dccb0bd0b7acb9!2z0LLRg9C70LjRhtGPINCh0L7QsdC-0YDQvdCwLCAxLCDQodGD0LzQuCwg0KHRg9C80YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDQwMDAw!5e0!3m2!1sru!2sua!4v1514570578181"></iframe>
+        </div>
+        <div class="container">
+            <footer class="main-footer row">
+            <div class="main-footer__socials col-md-4">
+                <a href="https://vk.com/mukha_pavel" target="_blank" class="main-footer__social main-footer__social_vk"><i  class="fa fa-vk" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100015830670632" target="_blank" class="main-footer__social main-footer__social_fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/pavel_muha/" target="_blank" class="main-footer__social main-footer__social_inst"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+            <div class="main-footer__slogan col-md-8">
+                <p class="main-footer__title">Давайте дружить, это выгодно!</p>
+                <p class="main-footer__text">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+            </footer>
+        </div>
+    </div>
+    <script src="js/slider.js"></script>
 </body>
 </html>

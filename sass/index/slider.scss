@@ -1,0 +1,84 @@
+.slider{
+  position: relative;
+  min-height:425px;
+  &__control{
+    position: absolute;
+    left:50%;
+    bottom:18%;
+    margin-left:-10px;
+    z-index: 1;
+    font-size:0;
+  }
+  &__controls{
+    position: relative;
+    display: inline-block;
+    width:18px;
+    height:18px;
+    margin-right:10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    &::after{
+      content: '';
+      position: absolute;
+      top:50%;
+      left:50%;
+      width: 8px;
+      height: 8px;
+      margin-top:-4px;
+      margin-left:-4px;
+      border:2px solid #c1c1c1;
+      border-radius: 50px;
+      display: none;
+    }
+  }
+  &__radio{
+    display: none;
+  }
+  &__control input[type="radio"]#btn-1:checked ~ label[for="btn-1"]::after{
+    display: block;
+  }
+  &__control input[type="radio"]#btn-2:checked ~ label[for="btn-2"]::after{
+    display: block;
+  }
+  &__control input[type="radio"]#btn-3:checked ~ label[for="btn-3"]::after{
+    display: block;
+  }
+  &__slide{
+    width:100%;
+    position: absolute;
+    transition: all 0.8s ease;
+  }
+  &__slide_1{
+  }
+  &__slide_2{
+    visibility: hidden;
+  }
+  &__slide_3{
+    visibility: hidden;
+  }
+  &__description{
+  }
+  &__title{
+    font-size:52px;
+    margin-bottom:30px;
+    padding-top:70px;
+  }
+  &__text{
+    color: #283136;
+    margin-bottom:30px;
+  }
+  &__image{
+    display: block;
+    height:425px;
+  }
+  &__image_1{
+    background: url("../img/slide1.png")no-repeat center;
+  }
+  &__image_2{
+    background: url("../img/slide2.png")no-repeat center;
+  }
+  &__image_3{
+    background: url("../img/slide3.png")no-repeat center;
+  }
+}
