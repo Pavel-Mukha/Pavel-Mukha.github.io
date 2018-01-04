@@ -24,10 +24,10 @@
                             <nav class="header-menu col-md-6">
                                 <ul class="header-menu__list row">
                                     <!-- для активного состояния элемента меню нужно использовать класс - header-menu__link_active -->
-                                    <li class="header-menu__item"><a href="#" class="header-menu__link">Студия</a></li>
-                                    <li class="header-menu__item"><a href="#" class="header-menu__link">Клиенты</a></li>
+                                    <li class="header-menu__item"><a href="#" class="header-menu__link header-menu__link_active">Студия</a></li>
                                     <li class="header-menu__item"><a href="#" class="header-menu__link">Магазин</a></li>
-                                    <li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
+                                    <li class="header-menu__item"><a href="#clients" class="header-menu__link">Клиенты</a></li>
+                                    <li class="header-menu__item"><a href="#a-contacts" class="header-menu__link">Контакты</a></li>
                                 </ul>
                             </nav>
                             <div class="main-header__basket col-md-3"><a href="#" class="main-header__basket-link">Корзина</a></div>
@@ -90,7 +90,7 @@
                     <p class="features__text">Вы даже не подозреваете, насколько вы изумительны!</p>
                     <a href="#" class="btn features__btn features__btn_yellow">ЗАКАЗАТЬ</a></div>
             </div>
-            <div class="about-us row">
+            <div class="about-us row" id="clients">
                 <div class="about-us__information col-md-8">
                     <h3 class="about-us__title">Мы — маленькая, но гордая
                         дизайн-студия. </h3>
@@ -141,7 +141,7 @@
                 </div>
             </div>
         </div>
-        <div class="map">
+        <div class="map" id="a-contacts">
             <div class="visit-card">
                 <p class="visit-card__title">NЁRDS DESIGN STUDIO</p>
                 <p class="visit-card__address">
@@ -184,5 +184,6 @@
         </div>
     </div>
     <script src="js/slider.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 </html>

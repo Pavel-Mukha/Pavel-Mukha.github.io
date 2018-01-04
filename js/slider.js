@@ -77,3 +77,28 @@ setInterval(function () {
         },300);
     }
 },6000);
+
+var block = document.querySelector('.main-header__logo-img');
+block.addEventListener('click', anim);
+
+function anim() {
+    requestAnimationFrame(step);
+    var stepLeft = 5;
+    var now = Date.now();
+    var iter = 0;
+    function step(time) {
+        iter++;
+        var passed = Date.now() - now;
+        stepLeft += 5;
+        block.style.position = 'relative';
+        block.style.left = stepLeft + 'px';
+        var animRun = requestAnimationFrame(step);
+        if(parseInt(block.style.left) >= 200){
+            console.log('time',time);
+            console.log('passed',passed);
+            console.log('iter',iter);
+            cancelAnimationFrame(animRun);
+        }
+    }
+}
+
