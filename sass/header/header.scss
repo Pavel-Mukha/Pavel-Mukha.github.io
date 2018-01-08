@@ -1,10 +1,14 @@
 .header-wrapper{
   background-color: #eeeeee;
   margin-bottom:80px;
+  &_shop{
+    margin-bottom:50px;
+  }
 }
 .main-header{
   min-height:120px;
   padding-top:40px;
+  margin-bottom:60px;
   &__logo:not(.main-header__logo_active){
     &:hover{
       opacity:0.8;
@@ -62,4 +66,10 @@
 }
 .inner{
   margin: 0 auto;
+}
+.shop-title{
+  margin-bottom:80px;
+  text-align: center;
+  font-size:55px;
+  line-height:1;
 }

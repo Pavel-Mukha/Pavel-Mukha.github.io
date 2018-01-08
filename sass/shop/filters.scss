@@ -1,0 +1,154 @@
+.products-filters{}
+.filters{
+  &__price{margin-bottom:50px;}
+  &__title{
+    margin-bottom:45px;
+    font-size:18px;
+    line-height:1.66;
+    text-transform: uppercase;
+    font-weight:bold;
+  }
+  &__drag-box{
+    position: relative;
+    width:260px;
+    height:80px;
+    margin-bottom:15px;
+    background-color: #eeeeee;
+    border-radius: 3px;
+  }
+  &__line{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:220px;
+    height:2px;
+    margin-top:-1px;
+    margin-left:-110px;
+    background-color: #d7dcde;
+    &-indicator{
+      position: absolute;
+      width:100%;
+      height:100%;
+      background-color: #00ca74;
+    }
+  }
+  &__toggle{
+    position: absolute;
+    top:50%;
+    background-color: #fff;
+    width:20px;
+    height:20px;
+    margin-top:-10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 1px 0 #cccdcd;
+    &::before{
+      content: '';
+      position: absolute;
+      top:50%;
+      left: 50%;
+      width:4px;
+      height:4px;
+      margin-top:-2px;
+      margin-left:-2px;
+      background-color: #ababab;
+      border-radius: 50%;
+    }
+    &_left{left:0;}
+    &_right{right:0;}
+  }
+
+  &__cost{
+
+  }
+  &__cost-text{
+    display: inline-block;
+    margin-right:10px;
+    color: #283136;
+  }
+  &__choice-price{
+    display: inline-block;
+    width:80px;
+    height:40px;
+    background-color: #eeeeee;
+    border:none;
+    border-radius: 3px;
+    outline:none;
+    padding-left:10px;
+    color: #283136;
+
+    &_margin{margin-right:25px;}
+  }
+
+  &__grid{margin-bottom:50px}
+  &__title_grid{margin-bottom:20px;}
+  &__grid-radio{display: none;}
+  &__grid-label{
+    position: relative;
+    display: block;
+    padding-left:35px;
+    margin-bottom:25px;
+    color: #283136;
+    cursor: pointer;
+  }
+  &__grid-indicator{
+    position: absolute;
+    top:-3px;
+    left: 0;
+    width:24px;
+    height:24px;
+    border:3px solid #b8b8b8;
+    border-radius: 50%;
+  }
+  &__grid-inner &__grid-label input[type='radio']:checked ~ &__grid-indicator::before{
+    content: '';
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:8px;
+    height:8px;
+    margin-top:-4px;
+    margin-left:-4px;
+    background-color: #b8b8b8;
+    border-radius: 50%;
+  }
+  &__features{margin-bottom:50px;}
+  &__title_features{
+    margin-bottom:25px;
+  }
+  &__features-label{
+    position: relative;
+    display: block;
+    padding-left:35px;
+    margin-bottom:25px;
+    color: #283136;
+    cursor: pointer;
+  }
+  &__features-checkbox{display: none;}
+  &__features-indicator{
+    position: absolute;
+    top:-2px;
+    left:0;
+    width:27px;
+    height:23px;
+    background: url("../../img/checkbox-off.png")no-repeat left center;
+  }
+  &__features-inner &__features-label input[type='checkbox']:checked ~ &__features-indicator{
+    background: url("../../img/checkbox-on.png")no-repeat center;
+  }
+  &__submit{
+    width:260px;
+    height:50px;
+    background-color: #eeeeee;
+    color: #000;
+    border: none;
+    outline:none;
+    &:hover{background-color: #dfdfdf;}
+    &:active{
+      background-color: #dfdfdf;
+      color: #000;
+      box-shadow: inset 0 3px 1px 0 #bfbfbf;
+      opacity:0.3;
+    }
+  }
+}
