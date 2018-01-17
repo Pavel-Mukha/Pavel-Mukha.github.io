@@ -53,6 +53,7 @@
   }
   .main-header__basket{
     display: none;
+    margin-bottom:30px;
   }
   .header-menu{
     display: none;
@@ -163,6 +164,11 @@
         transform:rotate(-45deg);
       }
     }
+  }
+  .shop-title{
+    margin-top:0px;
+    margin-bottom: 30px;
+    font-size: 30px;
   }
 }
 
