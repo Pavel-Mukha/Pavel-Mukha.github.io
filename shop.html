@@ -2,162 +2,336 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/style.css">
     <title>Портфолио</title>
 </head>
 <body>
+<div id="background-popup"></div>
 <div class="page-wrapper">
-    <div class="header-wrapper header-wrapper_shop">
+    <header class="main-header main-header_shop-page">
         <div class="container">
-            <header class="main-header">
-                <div class="row">
-                    <div class="main-header__logo main-header__logo_active col-md-3">
-                        <a class="main-header__logo-img"><img src="img/nerds-logo.png" alt="logo" width="160" height="65"></a>
-                    </div>
-                    <nav class="header-menu col-md-6">
-                        <ul class="header-menu__list row">
-                            <!-- для активного состояния элемента меню нужно использовать класс - header-menu__link_active -->
-                            <li class="header-menu__item"><a href="index.html" class="header-menu__link">Студия</a></li>
-                            <li class="header-menu__item"><a class="header-menu__link header-menu__link_active">Магазин</a></li>
-                            <li class="header-menu__item"><a href="index.html#clients" class="header-menu__link">Клиенты</a></li>
-                            <li class="header-menu__item"><a href="index.html#a-contacts" class="header-menu__link">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <div class="main-header__basket col-md-3"><a href="#" class="main-header__basket-link">Корзина</a></div>
-                    <!-- для активного состояния корзины нужно использовать класс - main-header__basket-link_active -->
+            <div class="main-header__show" id="header-show">
+                <div class="main-header__indicator"></div>
+                <div class="main-header__indicator"></div>
+                <div class="main-header__indicator"></div>
+            </div>
+            <div class="row">
+                <div class="main-header__logo main-header__logo_active col-md-3 col-sm-3">
+                    <a href="index.html" class="main-header__logo-img"><img id="main-logo" src="img/nerds-logo.png" alt="logo" width="160" height="65"></a>
                 </div>
-            </header>
+                <nav class="header-menu col-md-6 col-sm-7" id="header-menu">
+                    <ul class="header-menu__list">
+                        <!-- для активного состояния элемента меню нужно использовать класс - header-menu__link_active -->
+                        <li class="header-menu__item"><a href="index.html" class="header-menu__link">Студия</a></li>
+                        <li class="header-menu__item"><a class="header-menu__link header-menu__link_active">Магазин</a></li>
+                        <li class="header-menu__item"><a href="index.html#clients" class="header-menu__link">Клиенты</a></li>
+                        <li class="header-menu__item"><a href="index.html#a-contacts" class="header-menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="main-header__basket col-md-3 col-sm-2" id="header-basket">
+                    <a href="#" class="main-header__basket-link">Корзина</a></div>
+                <!-- для активного состояния корзины нужно использовать класс - main-header__basket-link_active -->
+            </div>
+            <!--/row-->
             <h1 class="shop-title">Магазин готовых шаблонов</h1>
         </div>
-    </div>
-    <div class="container">
-        <div class="shop-products row">
-            <div class="products-filters col-md-3 col-sm-3 col-xs-12">
-                <form action="#" class="filters" name="filters" method="get">
-                    <div class="filters__price">
-                        <p class="filters__title">СТОИМОСТЬ:</p>
-                        <div class="filters__drag-box">
-                            <div class="filters__line">
-                                <div style="width:75%;" class="filters__line-indicator"></div>
-                                <span style="left:0%;" class="filters__toggle filters__toggle_left"></span>
-                                <span style="left:75%;" class="filters__toggle filters__toggle_right"></span>
+        <!--/container-->
+    </header>
+    <!--/header-->
+    <div class="shop-products">
+        <div class="container">
+            <p class="shop-products__show-filters btn" id="shop-page-filters">Показать фильтр</p>
+            <div class="row">
+                <div class="products-filters col-md-4 col-sm-5" id="filters-panel">
+                    <div class="indicator-close" id="indicator-close">
+                        <span class="indicator-close__line indicator-close__line-1"></span>
+                        <span class="indicator-close__line indicator-close__line-2"></span>
+                    </div>
+                    <form action="#" class="filters" name="filters" method="get">
+                        <div class="filters__price">
+                            <p class="filters__title">СТОИМОСТЬ:</p>
+                            <div class="filters__drag-box">
+                                <div class="filters__line">
+                                    <div style="width:75%;" class="filters__line-indicator"></div>
+                                    <span style="left:0%;" class="filters__toggle filters__toggle_left"></span>
+                                    <span style="left:75%;" class="filters__toggle filters__toggle_right"></span>
+                                </div>
+                            </div>
+                            <div class="filters__cost">
+                                <span class="filters__cost-text">ОТ</span>
+                                <input type="tel" class="filters__choice-price filters__choice-price_margin" value="0">
+                                <span class="filters__cost-text">ДО</span>
+                                <input type="tel" class="filters__choice-price" value="50000">
                             </div>
                         </div>
-                        <div class="filters__cost">
-                            <span class="filters__cost-text">ОТ</span>
-                            <input type="tel" class="filters__choice-price filters__choice-price_margin" value="0">
-                            <span class="filters__cost-text">ДО</span>
-                            <input type="tel" class="filters__choice-price" value="50000">
+                        <div class="filters__grid">
+                            <p class="filters__title filters__title_grid">Сетка:</p>
+                            <div class="filters__grid-inner">
+                                <label class="filters__grid-label">
+                                    <input type="radio" class="filters__grid-radio" name="grid-radio" value="0" checked>
+                                    <span class="filters__grid-indicator"></span>
+                                    Адаптивная
+                                </label>
+                            </div>
+                            <div class="filters__grid-inner">
+                                <label class="filters__grid-label">
+                                    <input type="radio" class="filters__grid-radio" name="grid-radio" value="1">
+                                    <span class="filters__grid-indicator"></span>
+                                    Фиксированная
+                                </label>
+                            </div>
+                            <div class="filters__grid-inner">
+                                <label class="filters__grid-label">
+                                    <input type="radio" class="filters__grid-radio" name="grid-radio" value="2">
+                                    <span class="filters__grid-indicator"></span>
+                                    Резиновая
+                                </label>
+                            </div>
                         </div>
+                        <div class="filters__features">
+                            <p class="filters__title filters__title_features">ОСОБЕННОСТИ:</p>
+                            <div class="filters__features-inner">
+                                <label class="filters__features-label">
+                                    <input type="checkbox" class="filters__features-checkbox" checked>
+                                    <span class="filters__features-indicator"></span>
+                                    Слайдер
+                                </label>
+                            </div>
+                            <div class="filters__features-inner">
+                                <label class="filters__features-label">
+                                    <input type="checkbox" class="filters__features-checkbox">
+                                    <span class="filters__features-indicator"></span>
+                                    Блок преимуществ
+                                </label>
+                            </div>
+                            <div class="filters__features-inner">
+                                <label class="filters__features-label">
+                                    <input type="checkbox" class="filters__features-checkbox" checked>
+                                    <span class="filters__features-indicator"></span>
+                                    Новости
+                                </label>
+                            </div>
+                            <div class="filters__features-inner">
+                                <label class="filters__features-label">
+                                    <input type="checkbox" class="filters__features-checkbox">
+                                    <span class="filters__features-indicator"></span>
+                                    Галерея
+                                </label>
+                            </div>
+                            <div class="filters__features-inner">
+                                <label class="filters__features-label">
+                                    <input type="checkbox" class="filters__features-checkbox">
+                                    <span class="filters__features-indicator"></span>
+                                    Корзина
+                                </label>
+                            </div>
+                        </div>
+                        <input type="submit" class="filters__submit btn" value="ПОКАЗАТЬ">
+                    </form>
+                </div>
+                <div class="products col-md-8 col-sm-7">
+                    <div class="products__items">
+                        <form class="sorting clearfix">
+                                <p class="sorting__title">СОРТИРОВАТЬ:</p>
+                                <div class="sorting__inner clearfix">
+                                    <div class="sorting__type">
+                                        <label class="sorting__label">
+                                            <input type="radio" class="sorting__type-radio" name="sorting-type" value="0" checked>
+                                            <span class="sorting__indicator">По цене</span>
+                                        </label>
+                                        <label class="sorting__label">
+                                            <input type="radio" class="sorting__type-radio" name="sorting-type" value="1">
+                                            <span class="sorting__indicator">По типу</span>
+                                        </label>
+                                        <label class="sorting__label">
+                                            <input type="radio" class="sorting__type-radio" name="sorting-type" value="2">
+                                            <span class="sorting__indicator">По названию</span>
+                                        </label>
+                                    </div>
+                                    <div class="sorting__big-to-small big-to-small">
+                                        <div class="big-to-small__inner">
+                                            <label class="big-to-small__label">
+                                                <input type="radio" class="big-to-small__radio" name="big-to-small" value="0" checked>
+                                                <span class="big-to-small__left big-to-small__indicator"></span>
+                                            </label>
+                                        </div>
+                                        <div class="big-to-small__inner">
+                                            <label class="big-to-small__label">
+                                                <input type="radio" class="big-to-small__radio" name="big-to-small" value="1">
+                                                <span class="big-to-small__right big-to-small__indicator"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
+                        <div class="products__item col-md-6 col-xs-12">
+                                    <div class="products__hover">
+                                        <div class="products__hover-inner">
+                                            <p class="products__hover-title">Sedona</p>
+                                            <p class="products__hover-text">Информационный сайт для туристов</p>
+                                            <a href="#" target="_blank" title="Добавить в корзину" class="btn products__hover-btn">9 900 руб.</a>
+                                        </div>
+                                    </div>
+                                    <div class="products__header">
+                                        <a class="products__header-link" href="content/sedona/index.html" target="_blank"></a>
+                                        <span class="products__header-indicator products__header-indicator_1"></span>
+                                        <span class="products__header-indicator products__header-indicator_2"></span>
+                                        <span class="products__header-indicator products__header-indicator_3"></span>
+                                    </div>
+                                    <a href="content/sedona/index.html" target="_blank" class="products__link" title="Просмотреть шаблон"><img src="img/sedona.jpg" alt="catalog img" class="products__img" width="360" height="616"></a>
+                                </div>
+                        <div class="products__item col-md-6 col-xs-12">
+                                    <div class="products__hover">
+                                        <div class="products__hover-inner">
+                                            <p class="products__hover-title">ТЕХНОМАРТ</p>
+                                            <p class="products__hover-text">Интернет-магазин инструментов для ремонта</p>
+                                            <a href="#" target="_blank" title="Добавить в корзину" class="btn products__hover-btn">9 900 руб.</a>
+                                        </div>
+                                    </div>
+                                    <div class="products__header">
+                                        <a class="products__header-link" href="content/sedona/index.html" target="_blank"></a>
+                                        <span class="products__header-indicator products__header-indicator_1"></span>
+                                        <span class="products__header-indicator products__header-indicator_2"></span>
+                                        <span class="products__header-indicator products__header-indicator_3"></span>
+                                    </div>
+                                    <a href="content/technomart/index.html" target="_blank" class="products__link" title="Просмотреть шаблон"><img src="img/technomart.jpg" alt="catalog img" class="products__img" width="360" height="616"></a>
+                                </div>
+                        <div class="products__item col-md-6 col-xs-12">
+                                    <div class="products__hover">
+                                        <div class="products__hover-inner">
+                                            <p class="products__hover-title">Pink App</p>
+                                            <p class="products__hover-text">Продуктовый лендинг приложения для iOS и Android</p>
+                                            <a href="#" target="_blank" title="Добавить в корзину" class="btn products__hover-btn">9 900 руб.</a>
+                                        </div>
+                                    </div>
+                                    <div class="products__header">
+                                        <a class="products__header-link" href="content/sedona/index.html" target="_blank"></a>
+                                        <span class="products__header-indicator products__header-indicator_1"></span>
+                                        <span class="products__header-indicator products__header-indicator_2"></span>
+                                        <span class="products__header-indicator products__header-indicator_3"></span>
+                                    </div>
+                                    <a href="#" class="products__link" title="Шаблон в разработке"><img src="img/pink.jpg" alt="catalog img" class="products__img" width="360" height="616"></a>
+                                </div>
+                        <div class="products__item col-md-6 col-xs-12">
+                                    <div class="products__hover">
+                                        <div class="products__hover-inner">
+                                            <p class="products__hover-title">Barbershop</p>
+                                            <p class="products__hover-text">Сайт салоны красоты.Для мужчин, да.</p>
+                                            <a href="#" target="_blank" title="Добавить в корзину" class="btn products__hover-btn">9 900 руб.</a>
+                                        </div>
+                                    </div>
+                                    <div class="products__header">
+                                        <a class="products__header-link" href="content/sedona/index.html" target="_blank"></a>
+                                        <span class="products__header-indicator products__header-indicator_1"></span>
+                                        <span class="products__header-indicator products__header-indicator_2"></span>
+                                        <span class="products__header-indicator products__header-indicator_3"></span>
+                                    </div>
+                                    <a href="#" class="products__link" title="Шаблон в разработке"><img src="img/barbershop.jpg" alt="catalog img" class="products__img" width="360" height="616"></a>
+                                </div>
+                        <div class="products__item col-md-6 col-xs-12">
+                                    <div class="products__hover">
+                                        <div class="products__hover-inner">
+                                            <p class="products__hover-title">MISHKA</p>
+                                            <p class="products__hover-text">Интернет-магазин вязаных игрушек</p>
+                                            <a href="#" target="_blank" title="Добавить в корзину" class="btn products__hover-btn">9 900 руб.</a>
+                                        </div>
+                                    </div>
+                                    <div class="products__header">
+                                        <a class="products__header-link" href="#" target="_blank"></a>
+                                        <span class="products__header-indicator products__header-indicator_1"></span>
+                                        <span class="products__header-indicator products__header-indicator_2"></span>
+                                        <span class="products__header-indicator products__header-indicator_3"></span>
+                                    </div>
+                                    <a href="#" class="products__link" title="Шаблон в разработке"><img src="img/mishka.jpg" alt="catalog img" class="products__img" width="360" height="616"></a>
+                                </div>
+                        <div class="products__item products__item_last col-md-6 col-xs-12">
+                                <div class="products__hover">
+                                    <div class="products__hover-inner">
+                                        <p class="products__hover-title">КВАСТ</p>
+                                        <p class="products__hover-text">Промо-сайт производителя крафтового кваса</p>
+                                        <a href="#" target="_blank" title="Добавить в корзину" class="btn products__hover-btn">9 900 руб.</a>
+                                    </div>
+                                </div>
+                                <div class="products__header">
+                                    <a class="products__header-link" href="#" target="_blank"></a>
+                                    <span class="products__header-indicator products__header-indicator_1"></span>
+                                    <span class="products__header-indicator products__header-indicator_2"></span>
+                                    <span class="products__header-indicator products__header-indicator_3"></span>
+                                </div>
+                                <a href="#" class="products__link" title="Шаблон в разработке"><img src="img/kvas.jpg" alt="catalog img" class="products__img" width="360" height="616"></a>
+                            </div>
+                        <div class="breadcrumbs col-sm-12">
+                                <ul class="breadcrumbs__list">
+                                    <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link_active">1</a></li>
+                                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">2</a></li>
+                                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">3</a></li>
+                                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__link_next">следующая</a></li>
+                                </ul>
+                            </div>
                     </div>
-                    <div class="filters__grid">
-                        <p class="filters__title filters__title_grid">Сетка:</p>
-                        <div class="filters__grid-inner">
-                            <label class="filters__grid-label">
-                                <input type="radio" class="filters__grid-radio" name="grid-radio" value="0" checked>
-                                <span class="filters__grid-indicator"></span>
-                                Адаптивная
-                            </label>
-                        </div>
-                        <div class="filters__grid-inner">
-                            <label class="filters__grid-label">
-                                <input type="radio" class="filters__grid-radio" name="grid-radio" value="1">
-                                <span class="filters__grid-indicator"></span>
-                                Фиксированная
-                            </label>
-                        </div>
-                        <div class="filters__grid-inner">
-                            <label class="filters__grid-label">
-                                <input type="radio" class="filters__grid-radio" name="grid-radio" value="2">
-                                <span class="filters__grid-indicator"></span>
-                                Резиновая
-                            </label>
-                        </div>
-                    </div>
-                    <div class="filters__features">
-                        <p class="filters__title filters__title_features">ОСОБЕННОСТИ:</p>
-                        <div class="filters__features-inner">
-                            <label class="filters__features-label">
-                                <input type="checkbox" class="filters__features-checkbox" checked>
-                                <span class="filters__features-indicator"></span>
-                                Слайдер
-                            </label>
-                        </div>
-                        <div class="filters__features-inner">
-                            <label class="filters__features-label">
-                                <input type="checkbox" class="filters__features-checkbox">
-                                <span class="filters__features-indicator"></span>
-                                Блок преимуществ
-                            </label>
-                        </div>
-                        <div class="filters__features-inner">
-                            <label class="filters__features-label">
-                                <input type="checkbox" class="filters__features-checkbox" checked>
-                                <span class="filters__features-indicator"></span>
-                                Новости
-                            </label>
-                        </div>
-                        <div class="filters__features-inner">
-                            <label class="filters__features-label">
-                                <input type="checkbox" class="filters__features-checkbox">
-                                <span class="filters__features-indicator"></span>
-                                Галерея
-                            </label>
-                        </div>
-                        <div class="filters__features-inner">
-                            <label class="filters__features-label">
-                                <input type="checkbox" class="filters__features-checkbox">
-                                <span class="filters__features-indicator"></span>
-                                Корзина
-                            </label>
-                        </div>
-                    </div>
-                    <input type="submit" class="filters__submit btn" value="ПОКАЗАТЬ">
-                </form>
+                </div>
             </div>
-            <div class="products col-md-9 col-sm-9 col-xs-12 row">
-                <div class="products__item col-md-6 col-xs-12">
-                    <a href="#" class="products__link"><img src="img/sedona.jpg" alt="catalog img" class="products__img" width="360" height="616"></a>
-                </div>
-                <div class="products__item col-md-6 col-xs-12">
-                    <a href="#" class="products__link"><img src="img/technomart.jpg" alt="catalog img" class="products__img" width="360" height="616"></a>
-                </div>
-                <div class="products__item col-md-6 col-xs-12">
-                    <a href="#" class="products__link"><img src="img/pink.jpg" alt="catalog img" class="products__img" width="360" height="616"></a>
-                </div>
-                <div class="products__item col-md-6 col-xs-12">
-                    <a href="#" class="products__link"><img src="img/barbershop.jpg" alt="catalog img" class="products__img" width="360" height="616"></a>
-                </div>
-                <div class="products__item col-md-6 col-xs-12">
-                    <a href="#" class="products__link"><img src="img/mishka.jpg" alt="catalog img" class="products__img" width="360" height="616"></a>
-                </div>
-                <div class="products__item col-md-6 col-xs-12">
-                    <a href="#" class="products__link"><img src="img/kvas.jpg" alt="catalog img" class="products__img" width="360" height="616"></a>
-                </div>
-            </div>
+            <!--/row-->
         </div>
+        <!--/container-->
     </div>
-    <div class="container">
-        <footer class="main-footer row">
-            <div class="main-footer__socials col-md-4">
-                <a href="https://vk.com/mukha_pavel" target="_blank" class="main-footer__social main-footer__social_vk"><i  class="fa fa-vk" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100015830670632" target="_blank" class="main-footer__social main-footer__social_fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/pavel_muha/" target="_blank" class="main-footer__social main-footer__social_inst"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <!--/shop-products-->
+    <div class="map" id="a-contacts">
+        <div class="visit-card">
+            <p class="visit-card__title">NЁRDS DESIGN STUDIO</p>
+            <p class="visit-card__address">
+                40000, Украина, Сумы<br>
+                ул. Соборная 1
+            </p>
+            <p class="visit-card__tel">тел. +38 (095) 882-19-33</p>
+            <a href="mailto:olddex@gmail.com" class="visit-card__email">olddex@gmail.com</a>
+            <div class="visit-card__skype">
+
+                <script src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+                <div id="SkypeButton_Call_charokrad_1">
+                    <script>
+                        Skype.ui({
+                            "name": "chat",
+                            "element": "SkypeButton_Call_charokrad_1",
+                            "participants": ["charokrad"],
+                            "imageSize": 24
+                        });
+                    </script>
+                </div>
+
             </div>
-            <div class="main-footer__slogan col-md-8">
+            <a href="#" class="visit-card__btn btn">Напишите нам</a>
+        </div>
+        <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2515.6750081289806!2d34.79981271574814!3d50.911229279541544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41290220b54f6be5%3A0x41dccb0bd0b7acb9!2z0LLRg9C70LjRhtGPINCh0L7QsdC-0YDQvdCwLCAxLCDQodGD0LzQuCwg0KHRg9C80YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDQwMDAw!5e0!3m2!1sru!2sua!4v1514570578181"></iframe>
+    </div>
+    <!--/map-->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="main-footer__socials col-md-4">
+                    <a href="https://vk.com/mukha_pavel" target="_blank" class="main-footer__social main-footer__social_vk"><i  class="fa fa-vk" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100015830670632" target="_blank" class="main-footer__social main-footer__social_fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/pavel_muha/" target="_blank" class="main-footer__social main-footer__social_inst"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+                <div class="main-footer__slogan col-md-8">
                 <p class="main-footer__title">Давайте дружить, это выгодно!</p>
                 <p class="main-footer__text">Скидка 10% для друзей из социальных сетей.</p>
             </div>
-        </footer>
-    </div>
-
+            </div>
+            <!--/row-->
+        </div>
+        <!--/container-->
+    </footer>
+    <!--/footer-->
+    <script src="js/blockLinks.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/filtersShow.js"></script>
 </div>
 </body>
 </html>

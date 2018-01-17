@@ -1,14 +1,13 @@
-.header-wrapper{
-  background-color: #eeeeee;
-  margin-bottom:80px;
-  &_shop{
-    margin-bottom:50px;
-  }
-}
+
 .main-header{
+  position: relative;
+  background-color: #eeeeee;
   min-height:120px;
   padding-top:40px;
-  margin-bottom:60px;
+  padding-bottom:30px;
+  &_shop-page{
+    margin-bottom:50px;
+  }
   &__logo:not(.main-header__logo_active){
     &:hover{
       opacity:0.8;
@@ -36,6 +35,7 @@
   &__basket-link_active{
     border-bottom:2px solid #fb565a;
   }
+
 }
 .header-menu{
   padding-top:35px;
@@ -68,6 +68,7 @@
   margin: 0 auto;
 }
 .shop-title{
+  margin-top:65px;
   margin-bottom:80px;
   text-align: center;
   font-size:55px;

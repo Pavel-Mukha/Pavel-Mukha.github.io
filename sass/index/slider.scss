@@ -1,6 +1,11 @@
 .slider{
+  margin-bottom:80px;
+  background-color: #eeeeee;
+}
+.carousel{
   position: relative;
   min-height:425px;
+
   &__control{
     position: absolute;
     left:50%;

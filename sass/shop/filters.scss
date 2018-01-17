@@ -1,4 +1,8 @@
-.products-filters{}
+.products-filters{
+  position: relative;
+  background-color:#fff;
+  z-index:2;
+}
 .filters{
   &__price{margin-bottom:50px;}
   &__title{

@@ -1,0 +1,80 @@
+.down{
+  animation: down 1.1s;
+  animation-fill-mode: forwards;
+  transform-origin: 0 0;
+}
+.up{
+  animation: up 0.3s;
+  animation-fill-mode: forwards;
+  transform-origin: 0 0;
+}
+.show-filters-panel{
+  position:absolute;
+  top:0;
+  box-shadow: 0 0 10px 7px rgba(0,0,0, 0.3);
+  display: block;
+  animation:showFiltersPanel 0.5s;
+  animation-fill-mode: forwards;
+  z-index: 21;
+}
+.close-filters-panel{
+  position:absolute;
+  top:0;
+  box-shadow: 0 0 10px 7px rgba(0,0,0, 0.3);
+  display: block;
+  animation:closeFiltersPanel 0.5s;
+  animation-fill-mode: forwards;
+  z-index:21;
+}
+.background-popup{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  opacity: 0.8;
+}
+
+@keyframes down {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(50deg);
+  }
+  60% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(35deg);
+  }
+}
+@keyframes up {
+  0% {
+    transform: rotate(35deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes showFiltersPanel {
+  0%{
+    left:-350px;
+  }
+  100%{
+    left:15px;
+  }
+}
+@keyframes closeFiltersPanel {
+  0%{
+    left:15px;
+  }
+  100%{
+    left:-350px;
+  }
+}

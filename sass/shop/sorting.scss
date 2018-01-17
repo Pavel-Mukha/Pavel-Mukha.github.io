@@ -1,0 +1,74 @@
+.sorting{
+  &__inner{
+    display: inline-block;
+    width:70%;
+    text-align: right;
+  }
+  &__title{
+    display: inline-block;
+    vertical-align: top;
+    width:29%;
+    margin-bottom:45px;
+    font-size:18px;
+    line-height:1.66;
+    font-weight:bold;
+    text-transform: uppercase;
+  }
+  &__type{
+    display: inline-block;
+    vertical-align: top;
+    margin-right:80px;
+  }
+  &__type-radio{display: none;}
+  &__label{padding-left:25px;}
+
+  &__indicator{
+    font-size:14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity:0.3;
+    transition: all 0.2s ease;
+  }
+  &__type input[type='radio']:checked ~ &__indicator{opacity:1;}
+}
+.big-to-small{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  &__left,
+  &__right{
+    position: absolute;
+    width:0;
+    height:0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  &__left{
+    top:50%;
+    left:-35px;
+    margin-top:5px;
+    border-top: 10px solid #000000;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity:0.3;
+  }
+  &__right{
+    top:50%;
+    left:-5px;
+    margin-top:-5px;
+    border-top: 10px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #000000;
+    opacity:0.3;
+  }
+  &__radio{display: none;}
+  &__inner input[type='radio']:checked ~ &__indicator{opacity:1;}
+}
+.shop-products{
+  position: relative;
+  &__show-filters{
+    display: none;
+  }
+}

@@ -1,5 +1,6 @@
 @import "global/reset";
 @import "global/btn";
+@import "global/breadcrumbs";
 
 @import "header/header";
 @import "index/slider";
@@ -9,4 +10,13 @@
 @import "index/map";
 @import "footer/footer";
 @import "shop/filters";
+@import "shop/sorting";
 @import "shop/products";
+
+@import "media/media-lg";
+@import "media/media-md";
+@import "media/media-sm";
+@import "media/media-xs";
+
+
+@import "animation/base";
