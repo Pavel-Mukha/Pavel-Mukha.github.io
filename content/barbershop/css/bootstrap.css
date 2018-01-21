@@ -1,12 +1,12 @@
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2017 Twitter, Inc.
+ * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/docs/3.3/customize/?id=d035bb683a6eb5fcf77f1032149c915d)
- * Config saved to config.json and https://gist.github.com/d035bb683a6eb5fcf77f1032149c915d
+ * Generated using the Bootstrap Customizer (https://getbootstrap.com/docs/3.3/customize/?id=41b35142b23e5bd64bf6a98d70bdb93f)
+ * Config saved to config.json and https://gist.github.com/41b35142b23e5bd64bf6a98d70bdb93f
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -32,7 +32,7 @@
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 990px;
   }
 }
 .container-fluid {

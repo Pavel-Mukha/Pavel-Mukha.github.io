@@ -1,0 +1,10 @@
+@media screen and (max-width: 1200px){
+  .features{
+    &__triangle{
+      border-top:65px solid $bg-grey;
+      border-bottom:0 solid transparent;
+      border-left:496px solid transparent;
+      border-right:496px solid transparent;
+    }
+  }
+}

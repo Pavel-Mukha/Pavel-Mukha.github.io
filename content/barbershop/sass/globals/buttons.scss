@@ -1,0 +1,17 @@
+//ghost-btn
+.ghost-btn{
+  padding:10px 30px;
+  @include text(18px, $bk, 24px);
+  text-transform: uppercase;
+  font-weight:bold;
+  text-decoration: none;
+  border:1px solid #e5ddd5;
+  &:hover{
+    border-color: #d5cabe;
+  }
+  &:active{
+    border-color: #d5cabe;
+    background-color: #d5c9bd;
+    color: rgba(0,0,0, 0.3);
+  }
+}

@@ -1,0 +1,16 @@
+.news{
+  margin-top:-65px;
+  margin-bottom:200px;
+  &__inner{
+    max-width: 1200px;
+    padding-top:125px;
+    margin:0 auto;
+    background-color: $bg-light;
+  }
+  &__title{
+    @include text(40px, $bk, 1);
+    text-transform: uppercase;
+    font-weight:bold;
+  }
+
+}

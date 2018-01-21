@@ -1,0 +1,60 @@
+.stats{
+  margin-top:-160px;
+  &__inner{
+  }
+  &__header{
+    position: relative;
+    height:320px;
+    background-color: $wt;
+    &::before{
+      content: '';
+      position: absolute;
+      top:37px;
+      left: -24px;
+      width:0;
+      height:0;
+      border-top: 12px solid $wt;
+      border-left: 12px solid transparent;
+      border-right: 12px solid $wt;
+      border-bottom: 12px solid transparent;
+    }
+  }
+  &__title{
+    display: block;
+    width:220px;
+    padding-top:30px;
+    margin:0 auto 50px auto;
+    @include text(40px, $bk, 1);
+    font-weight:bold;
+  }
+  &__description{
+    display: block;
+    width:220px;
+    margin:0 auto 30px auto;
+    @include text(20px, $bk, 27px);
+  }
+  &__addition{
+    display: block;
+    width: 220px;
+    margin:0 auto;
+    @include text(20px, rgba(0,0,0, 0.3), 27px);
+  }
+  &__item{
+    height:160px;
+    &_1{ background-color: #404040; }
+    &_2{ background-color: #4e4e4e; }
+    &_3{ background-color: $bg-grey; }
+    &_4{ background-color: #404040; }
+  }
+  &__body{ }
+  &__name{
+    padding-top:22px;
+    padding-left:20px;
+    margin-bottom:8px;
+    @include text(72px, $wt, 1);
+  }
+  &__text{
+    padding-left:20px;
+    @include text(20px, $col-white, 27px);
+  }
+}

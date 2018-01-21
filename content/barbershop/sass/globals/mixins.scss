@@ -1,0 +1,14 @@
+//padding
+@mixin pad ($pads...){
+  padding: $pads;
+}
+//margin
+@mixin mg ($mgs...){
+  margin: $mgs;
+}
+//text color, font-size and line-height
+@mixin text ($fz, $color: #000000, $lh: normal){
+  font-size:$fz;
+  color: $color;
+  line-height: $lh;
+}

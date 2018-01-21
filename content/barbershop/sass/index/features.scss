@@ -1,0 +1,56 @@
+.features{
+  margin-top:-160px;
+  &__inner{
+    height:555px;
+    padding-top:235px;
+    max-width:1200px;
+    margin:0 auto;
+    background-color: $bg-grey;
+  }
+  &__triangle{
+    position: relative;
+    width:0;
+    height:0;
+    margin:0 auto;
+    border-top:65px solid $bg-grey;
+    border-bottom:0 solid transparent;
+    border-left:600px solid transparent;
+    border-right:600px solid transparent;
+    z-index:2;
+  }
+  &__item{
+    position: relative;
+    text-align: center;
+    &:not(:last-child)::after{
+      content: '';
+      position: absolute;
+      bottom:0;
+      right: 0;
+      width:1px;
+      height:270px;
+      background-color: #4a4a4a;
+    }
+  }
+  &__ico{
+    width:95px;
+    height:95px;
+    margin:0 auto 40px auto;
+    background: url("../img/sripte.png")no-repeat 0 0;
+    &_2{
+      background-position: 0 -104px;
+    }
+    &_3{
+      background-position: 0 -203px;
+    }
+  }
+  &__title{
+    margin-bottom:12px;
+    @include text(30px, $col-white, 1);
+    font-weight:bold;
+  }
+  &__description{
+    width:235px;
+    margin:0 auto;
+    @include text(20px, $col-white, 27px);
+  }
+}
